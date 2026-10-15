@@ -1,0 +1,9 @@
+{
+  "exchange_rate": "bolsa",
+  "exchange_label": "Dólar MEP vendedor",
+  "fx_aggregation": "Promedio de observaciones diarias de lunes a viernes; no se interpolan días ausentes",
+  "price_history_start": "2017-01",
+  "index_base": "2021-01",
+  "rent_area_m2": 30,
+  "timezone": "America/Sao_Paulo"
+}

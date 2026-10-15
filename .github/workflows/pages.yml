@@ -1,9 +1,12 @@
-name: Publish report
+name: Update and publish report
 
 on:
   push:
     branches: [main]
   workflow_dispatch:
+  schedule:
+    # Monday at 09:15 in Sao Paulo (UTC-3).
+    - cron: '15 12 * * 1'
 
 permissions:
   contents: read
@@ -13,7 +16,50 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - name: Install Python dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Check the stored source data and calculations
+        run: python tests/test_pipeline.py
+      - name: Download sources and generate the report
+        run: python scripts/update.py --refresh
+      - name: Prepare the public site
+        run: python scripts/build_site.py
+      - name: Save the source history and generated report
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/raw data/manifest.json data/runs index.html series.csv
+          if ! git diff --cached --quiet; then
+            git commit -m 'Update public source data and report'
+            git push origin HEAD:main
+          fi
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - name: Save diagnostics if the update fails
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: update-diagnostics
+          path: |
+            data/manifest.json
+            data/runs
+            data/processed/report.json
+          retention-days: 14
+
   deploy:
+    needs: update
     runs-on: ubuntu-latest
     permissions:
       pages: write
@@ -22,11 +68,7 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: .
       - name: Publish to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

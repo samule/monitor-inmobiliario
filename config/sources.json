@@ -1,0 +1,106 @@
+[
+  {
+    "id": "icc",
+    "filename": "EE_ICC_02-16.xlsx",
+    "page": "https://www.estadisticaciudad.gob.ar/eyc/banco-datos/indice-del-costo-de-la-construccion-y-variacion-porcentual-respecto-del-mes-anterior-nivel-general-y-capitulos-ciudad-de-buenos-aires-enero-de-2015-julio-de-2025/",
+    "url": "https://www.estadisticaciudad.gob.ar/eyc/wp-content/uploads/2026/07/EE_ICC_02-16.xlsx",
+    "provider": "IDECBA",
+    "format": "xlsx"
+  },
+  {
+    "id": "rent",
+    "filename": "MI_DAP_AX15.xlsx",
+    "page": "https://www.estadisticaciudad.gob.ar/eyc/banco-datos/precio-promedio-de-publicacion-pesos-de-departamentos-en-alquiler-de-1-2-y-3-ambientes-usados-y-a-estrenar-ciudad-de-buenos-aires-marzo-2010-marzo-2023/",
+    "url": "https://www.estadisticaciudad.gob.ar/eyc/wp-content/uploads/2026/08/MI_DAP_AX15.xlsx",
+    "provider": "IDECBA",
+    "format": "xlsx"
+  },
+  {
+    "id": "area1",
+    "filename": "MI_DAS2_AX02a.xlsx",
+    "page": "https://www.estadisticaciudad.gob.ar/eyc/banco-datos/mercado-inmobiliario-superficie-ofertada-de-departamentos-en-alquiler-de-1-ambiente-segun-barrio-en-m2-ciudad-de-buenos-aires-julio-2013octubre-2014/",
+    "url": "https://www.estadisticaciudad.gob.ar/eyc/wp-content/uploads/2026/08/MI_DAS2_AX02a.xlsx",
+    "provider": "IDECBA",
+    "format": "xlsx"
+  },
+  {
+    "id": "area2",
+    "filename": "MI_DAS2_AX02b.xlsx",
+    "page": "https://www.estadisticaciudad.gob.ar/eyc/banco-datos/mercado-inmobiliario-superficie-ofertada-de-departamentos-en-alquiler-de-2-ambientes-segun-barrio-en-m2-ciudad-de-buenos-aires-julio-2013octubre-2014/",
+    "url": "https://www.estadisticaciudad.gob.ar/eyc/wp-content/uploads/2026/08/MI_DAS2_AX02b.xlsx",
+    "provider": "IDECBA",
+    "format": "xlsx"
+  },
+  {
+    "id": "area3",
+    "filename": "MI_DAS2_AX02c.xlsx",
+    "page": "https://www.estadisticaciudad.gob.ar/eyc/banco-datos/mercado-inmobiliario-superficie-ofertada-de-departamentos-en-alquiler-de-3-ambientes-segun-barrio-en-m2-ciudad-de-buenos-aires-julio-2013octubre-2014/",
+    "url": "https://www.estadisticaciudad.gob.ar/eyc/wp-content/uploads/2026/08/MI_DAS2_AX02c.xlsx",
+    "provider": "IDECBA",
+    "format": "xlsx"
+  },
+  {
+    "id": "days",
+    "filename": "MI_DVT.xlsx",
+    "page": "https://www.estadisticaciudad.gob.ar/eyc/banco-datos/tiempo-medio-de-publicacion-dias-de-departamentos-en-venta-por-cantidad-de-ambientes-ciudad-de-buenos-aires-4to-trimestre-de-2013-2do-trimestre-de-2024/",
+    "url": "https://www.estadisticaciudad.gob.ar/eyc/wp-content/uploads/2026/01/MI_DVT.xlsx",
+    "provider": "IDECBA",
+    "format": "xlsx"
+  },
+  {
+    "id": "new1",
+    "filename": "MI_DVP_AX11.xlsx",
+    "page": "https://www.estadisticaciudad.gob.ar/eyc/banco-datos/precio-promedio-de-publicacion-del-metro-cuadrado-dolares-de-departamentos-en-venta-de-1-ambiente-a-estrenar-por-comuna-ciudad-de-buenos-aires-1er-trimestre-de-2017-2do-trimestre-de-2024/",
+    "url": "https://www.estadisticaciudad.gob.ar/eyc/wp-content/uploads/2025/01/MI_DVP_AX11.xlsx",
+    "provider": "IDECBA",
+    "format": "xlsx"
+  },
+  {
+    "id": "used1",
+    "filename": "MI_DVP_AX12.xlsx",
+    "page": "https://www.estadisticaciudad.gob.ar/eyc/banco-datos/precio-promedio-de-publicacion-del-metro-cuadrado-dolares-de-departamentos-en-venta-de-1-ambiente-usados-por-comuna-ciudad-de-buenos-aires-1er-trimestre-de-2017-2do-trimestre-de-2024/",
+    "url": "https://www.estadisticaciudad.gob.ar/eyc/wp-content/uploads/2025/01/MI_DVP_AX12.xlsx",
+    "provider": "IDECBA",
+    "format": "xlsx"
+  },
+  {
+    "id": "new2",
+    "filename": "MI_DVP_AX05.xlsx",
+    "page": "https://www.estadisticaciudad.gob.ar/eyc/banco-datos/precio-promedio-de-publicacion-del-metro-cuadrado-dolares-de-departamentos-en-venta-de-2-ambientes-a-estrenar-por-comuna-ciudad-de-buenos-aires-1er-trimestre-de-2015-2do-trimestre-de-2024/",
+    "url": "https://www.estadisticaciudad.gob.ar/eyc/wp-content/uploads/2026/01/MI_DVP_AX05.xlsx",
+    "provider": "IDECBA",
+    "format": "xlsx"
+  },
+  {
+    "id": "new3",
+    "filename": "MI_DVP_AX06.xlsx",
+    "page": "https://www.estadisticaciudad.gob.ar/eyc/banco-datos/precio-promedio-de-publicacion-del-metro-cuadrado-dolares-de-departamentos-en-venta-de-3-ambientes-a-estrenar-por-comuna-ciudad-de-buenos-aires-1er-trimestre-de-2015-2do-trimestre-de-2024/",
+    "url": "https://www.estadisticaciudad.gob.ar/eyc/wp-content/uploads/2026/01/MI_DVP_AX06.xlsx",
+    "provider": "IDECBA",
+    "format": "xlsx"
+  },
+  {
+    "id": "ipc",
+    "filename": "IPCBA_base_2021100-Nivel_general_empalme.xlsx",
+    "page": "https://www.estadisticaciudad.gob.ar/eyc/banco-datos/ipcba-base-2021-100-nivel-general-indice-mensual-empalmado-con-la-serie-anterior-base-julio-2011-junio-2012-100-ciudad-de-buenos-aires-julio-de-2012-agosto-de-2025/",
+    "url": "https://www.estadisticaciudad.gob.ar/eyc/wp-content/uploads/2026/08/IPCBA_base_2021100-Nivel_general_empalme.xlsx",
+    "provider": "IDECBA",
+    "format": "xlsx"
+  },
+  {
+    "id": "ripte",
+    "filename": "ripte.pdf",
+    "page": "https://www.argentina.gob.ar/trabajo/seguridadsocial/ripte",
+    "url": "https://www.argentina.gob.ar/sites/default/files/ripte_julio_2026-mdch.pdf",
+    "provider": "Secretaría de Trabajo / Seguridad Social",
+    "format": "pdf"
+  },
+  {
+    "id": "fx",
+    "filename": "dolares.json",
+    "page": "https://argentinadatos.com/docs/operations/get-cotizaciones-dolares",
+    "url": "https://api.argentinadatos.com/v1/cotizaciones/dolares",
+    "provider": "ArgentinaDatos (no oficial)",
+    "format": "json"
+  }
+]
