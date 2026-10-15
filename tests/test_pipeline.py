@@ -27,8 +27,8 @@ class PipelineTests(unittest.TestCase):
         self.assertGreaterEqual(len(self.ds['ripte'][0]),385)
         self.assertAlmostEqual(self.ds['new1'][0]['2026-06']['values'][0],3105.25968287032,places=5)
 
-    def test_all_seven_and_correct_frequency(self):
-        self.assertEqual([c['id'] for c in self.cards],list(range(1,8)))
+    def test_all_eight_and_correct_frequency(self):
+        self.assertEqual([c['id'] for c in self.cards],list(range(1,9)))
         for c in self.cards:
             for v in c['views']:
                 for line in v['lines']:
@@ -42,7 +42,7 @@ class PipelineTests(unittest.TestCase):
         changed=copy.deepcopy(self.ds)
         changed['fx'][0].pop('2025-02')
         cards=m.build_charts(changed,self.settings)
-        for card in cards[5:]:
+        for card in cards[5:7]:
             for view in card['views']:
                 for line in view['lines']:
                     self.assertNotIn('2025-03',[p[0] for p in line['points']])
@@ -67,5 +67,25 @@ class PipelineTests(unittest.TestCase):
         expected=self.ds['used1'][0][q]['values'][0]/usd
         actual=next(p[1] for p in self.cards[5]['views'][0]['lines'][1]['points'] if p[0]==q)
         self.assertAlmostEqual(actual,expected,places=12)
+
+    def test_construction_cost_uses_official_total_and_same_month_mep(self):
+        self.assertAlmostEqual(self.ds['cost_m2'][0]['2026-08']['values'][0],1637795.31,places=2)
+        for i,line in enumerate(self.cards[7]['views'][1]['lines']):
+            for k,value,provisional in line['points']:
+                cost=self.ds['cost_m2'][0][k]
+                fx=self.ds['fx'][0][k]
+                self.assertAlmostEqual(value,cost['values'][i]/fx['values'][0],places=10)
+                self.assertEqual(provisional,cost['provisional'] or fx['provisional'])
+
+    def test_construction_cost_does_not_bridge_missing_exchange_month(self):
+        changed=copy.deepcopy(self.ds)
+        changed['fx'][0]['2025-02']['observations']=9
+        card=m.build_charts(changed,self.settings)[7]
+        self.assertNotIn('2025-02',[p[0] for p in card['views'][0]['lines'][0]['points']])
+        changes={p[0]:p[1] for p in card['views'][2]['lines'][0]['points']}
+        self.assertNotIn('2025-03',changes)
+        self.assertIn('2025-04',changes)
+        points=dict((p[0],p[1]) for p in card['views'][0]['lines'][0]['points'])
+        self.assertAlmostEqual(changes['2025-04'],100*(points['2025-04']/points['2025-03']-1),places=10)
 
 if __name__=='__main__': unittest.main()

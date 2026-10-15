@@ -102,5 +102,13 @@
     "url": "https://api.argentinadatos.com/v1/cotizaciones/dolares",
     "provider": "ArgentinaDatos (no oficial)",
     "format": "json"
+  },
+  {
+    "id": "cost_m2",
+    "filename": "EE_CMC.xlsx",
+    "page": "https://www.estadisticaciudad.gob.ar/eyc/banco-datos/costo-de-construccion-del-metro-cuadrado-en-pesos-segun-modelo-de-vivienda-ciudad-de-buenos-aires-enero-de-2015-julio-de-2025/",
+    "url": "https://www.estadisticaciudad.gob.ar/eyc/wp-content/uploads/2026/07/EE_CMC.xlsx",
+    "provider": "IDECBA",
+    "format": "xlsx"
   }
 ]

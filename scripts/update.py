@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Descarga, conserva originales y genera un HTML autónomo con siete indicadores."""
+"""Descarga, conserva originales y genera un HTML autónomo con ocho indicadores."""
 import argparse
 import csv
 import hashlib
@@ -68,6 +68,19 @@ def parse_xlsx(source,path):
                 for row in data[3:]:
                     m=month(row[0])
                     if m: put(out,f'{sheet.title}-{m:02d}',row[1:5],'*' in str(row[0]))
+        elif sid=='cost_m2':
+            if 'Costo de construcción del metro cuadrado (en pesos)' not in title:
+                raise ValueError('Cambió el encabezado del costo por m²')
+            for sheet in w:
+                if not re.fullmatch(r'20\d{2}',sheet.title): continue
+                data=list(sheet.values)
+                if data[1][1]!='Total Ciudad' or tuple(data[2][2:6])!=('Tipo I','Tipo II','Tipo III','Tipo IV'):
+                    raise ValueError('Cambió la estructura del costo por m²: '+sheet.title)
+                for row in data[3:]:
+                    m=month(row[0])
+                    if m:
+                        put(out,f'{sheet.title}-{m:02d}',row[1:6],'*' in str(row[0]))
+                        if any(v<=0 for v in row[1:6]): raise ValueError('Costo por m² no positivo')
         elif sid=='rent':
             if 'alquiler' not in title or [str(x) for x in rows[2][2:5]] != ['1 ambiente','2 ambientes','3 ambientes']:
                 raise ValueError('Cambió la estructura de alquileres')
@@ -252,6 +265,17 @@ def build_charts(ds,settings):
         ratios.append(line(name,rp)); yields.append(line(name,yp)); years.append(line(name,ap))
     c.append({'id':6,'title':'Salarios para comprar 1 m²','intro':'Monoambientes · RIPTE convertido al dólar MEP','sources':['new1','used1','ripte','fx'],'note':'Precio del m² / promedio trimestral de RIPTE mensual en USD MEP. Sólo trimestres con los tres meses de RIPTE y de cotizaciones. RIPTE es remuneración imponible de trabajadores estables, no el salario de toda la economía. Se muestran usados y a estrenar porque el video no precisa el tipo.','views':[chart('Acceso al m²','Salarios RIPTE',ratios,'Trimestral')]})
     c.append({'id':7,'title':'Rentabilidad y recuperación','intro':'Estimación bruta · monoambiente de 30 m² · dólar MEP','sources':['new1','used1','rent','fx'],'note':'Estimación comparable, no réplica exacta del video: el alquiler publicado mezcla usados y a estrenar. Se aplica el mismo alquiler de una unidad base de 30 m² a ambos precios de compra. Rendimiento = 12 × promedio trimestral del alquiler mensual en USD / (precio del m² × 30). Años = 100 / rendimiento en %. Excluye vacancia, impuestos, mantenimiento, gastos de compra y apreciación.','views':[chart('Rendimiento bruto anualizado','% anual',yields,'Trimestral'),chart('Años para recuperar la inversión','Años',years,'Trimestral')]})
+    costs=data['cost_m2']
+    eligible=[k for k in costs if k in fx and fx[k]['observations']>=10]
+    labels=['Total Ciudad','Tipo I · sencilla','Tipo II · sencilla con local','Tipo III · confortable','Tipo IV · suntuosa']
+    usd=[line(n,[[k,costs[k]['values'][i]/fx[k]['values'][0],costs[k]['provisional'] or fx[k]['provisional']] for k in eligible]) for i,n in enumerate(labels)]
+    changes=[]
+    for k,value,provisional in usd[0]['points']:
+        y,m=map(int,k.split('-')); prev=f'{y-(m==1)}-{(m-2)%12+1:02d}'
+        if prev in eligible:
+            previous=costs[prev]['values'][0]/fx[prev]['values'][0]
+            changes.append([k,100*(value/previous-1),provisional or costs[prev]['provisional'] or fx[prev]['provisional']])
+    c.append({'id':8,'title':'Costo de construcción por m² en USD MEP','intro':'Costo mensual · Total Ciudad y cuatro modelos de vivienda · CABA','sources':['cost_m2','fx'],'note':'Costo de construcción en pesos / dólar MEP vendedor promedio del mismo mes. Se usa el Total Ciudad oficial, no el promedio simple de los cuatro modelos. Incluye materiales, mano de obra y gastos generales; excluye terreno, IVA, derechos y permisos, costos financieros y beneficio de la constructora. Son edificios de vivienda colectiva, no un presupuesto para una casa particular ni el precio de venta. Sólo meses cerrados con al menos diez cotizaciones; no se interpolan faltantes. La historia en USD empieza con la cobertura MEP disponible. * indica datos provisorios.','views':[chart('Costo por m² · USD MEP','USD MEP / m²',usd[:1],'Mensual'),chart('Por tipo de vivienda · USD MEP','USD MEP / m²',usd,'Mensual'),chart('Variación mensual · USD MEP','%',[line('Total Ciudad',changes)],'Mensual'),chart('Costo por m² · pesos','ARS / m²',[line('Total Ciudad',[point(costs,k) for k in costs])],'Mensual')]})
     for card in c:
         if any(not ln['points'] for view in card['views'] for ln in view['lines']):
             raise ValueError('Sin datos para el gráfico '+str(card['id']))
@@ -313,7 +337,7 @@ def main():
     (folder/'index.html.tmp').replace(folder/'index.html')
     run_id=now.strftime('%Y%m%d-%H%M%S-%f')
     atomic_json(ROOT/'data/runs'/(run_id+'.json'),{'generated_at':now_text,'as_of':as_of.isoformat(),'refresh_requested':args.refresh,'failures':failures,'source_hashes':{k:v['sha256'] for k,v in manifest.items()}})
-    print('Generados 7 gráficos: '+str(folder/'index.html'))
+    print(f'Generados {len(cards)} gráficos: '+str(folder/'index.html'))
     print('Períodos: '+', '.join(sid+' '+max(rows) for sid,(rows,_) in ds.items()))
     if failures:
         print('AVISO: se conservaron originales anteriores para: '+', '.join(failures),file=sys.stderr)

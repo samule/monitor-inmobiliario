@@ -33,6 +33,6 @@ def main():
         destination=target/relative
         destination.parent.mkdir(parents=True,exist_ok=True)
         shutil.copy2(original,destination)
-    print('Packaged seven charts and '+str(len(report['sources']))+' source files for GitHub Pages.')
+    print('Packaged '+str(len(report['cards']))+' charts and '+str(len(report['sources']))+' source files for GitHub Pages.')
 
 if __name__=='__main__': main()

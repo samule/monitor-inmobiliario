@@ -34,3 +34,5 @@ python scripts/build_site.py
 Only `_site` is deployed. Python code and configuration remain in the repository.
 
 The rental return chart is an estimate. Its method is stated next to the chart.
+
+Construction cost per m² (chart 8) uses the official IDECBA Total Ciudad in ARS divided by the same month’s average seller MEP rate. Views show the total, four housing models, monthly USD changes, and nominal ARS. Only closed months with at least ten exchange-rate observations are included. Land, VAT, permits, financing and developer profit are excluded. This is a construction cost for apartment-building models, not a sale price or a quote for an individual house.
