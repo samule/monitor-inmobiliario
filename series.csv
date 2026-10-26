@@ -65,8 +65,9 @@
 1,Evolución frente a la inflación,Nivel general,2026-04,2154.1513639770415,Índice · ene 2021 = 100,False
 1,Evolución frente a la inflación,Nivel general,2026-05,2203.586613338727,Índice · ene 2021 = 100,False
 1,Evolución frente a la inflación,Nivel general,2026-06,2280.6338950130435,Índice · ene 2021 = 100,False
-1,Evolución frente a la inflación,Nivel general,2026-07,2332.3446329640374,Índice · ene 2021 = 100,True
+1,Evolución frente a la inflación,Nivel general,2026-07,2332.3446329640374,Índice · ene 2021 = 100,False
 1,Evolución frente a la inflación,Nivel general,2026-08,2410.6616164904694,Índice · ene 2021 = 100,True
+1,Evolución frente a la inflación,Nivel general,2026-09,2451.157001093066,Índice · ene 2021 = 100,True
 1,Evolución frente a la inflación,Materiales,2021-01,100.0,Índice · ene 2021 = 100,False
 1,Evolución frente a la inflación,Materiales,2021-02,105.01761348434852,Índice · ene 2021 = 100,False
 1,Evolución frente a la inflación,Materiales,2021-03,109.31731026487114,Índice · ene 2021 = 100,False
@@ -133,8 +134,9 @@
 1,Evolución frente a la inflación,Materiales,2026-04,1853.0444573263176,Índice · ene 2021 = 100,False
 1,Evolución frente a la inflación,Materiales,2026-05,1883.1958441095157,Índice · ene 2021 = 100,False
 1,Evolución frente a la inflación,Materiales,2026-06,1913.6164496566485,Índice · ene 2021 = 100,False
-1,Evolución frente a la inflación,Materiales,2026-07,1948.0519263355036,Índice · ene 2021 = 100,True
+1,Evolución frente a la inflación,Materiales,2026-07,1948.0519263355036,Índice · ene 2021 = 100,False
 1,Evolución frente a la inflación,Materiales,2026-08,1972.46165165433,Índice · ene 2021 = 100,True
+1,Evolución frente a la inflación,Materiales,2026-09,2002.9519307946132,Índice · ene 2021 = 100,True
 1,Evolución frente a la inflación,Mano de obra,2021-01,100.0,Índice · ene 2021 = 100,False
 1,Evolución frente a la inflación,Mano de obra,2021-02,106.39741144171289,Índice · ene 2021 = 100,False
 1,Evolución frente a la inflación,Mano de obra,2021-03,106.39741144171289,Índice · ene 2021 = 100,False
@@ -201,8 +203,9 @@
 1,Evolución frente a la inflación,Mano de obra,2026-04,2652.204374877436,Índice · ene 2021 = 100,False
 1,Evolución frente a la inflación,Mano de obra,2026-05,2725.582514752287,Índice · ene 2021 = 100,False
 1,Evolución frente a la inflación,Mano de obra,2026-06,2890.8758668639584,Índice · ene 2021 = 100,False
-1,Evolución frente a la inflación,Mano de obra,2026-07,2957.7630007309294,Índice · ene 2021 = 100,True
+1,Evolución frente a la inflación,Mano de obra,2026-07,2957.7630007309294,Índice · ene 2021 = 100,False
 1,Evolución frente a la inflación,Mano de obra,2026-08,3141.0523594744445,Índice · ene 2021 = 100,True
+1,Evolución frente a la inflación,Mano de obra,2026-09,3200.547305367872,Índice · ene 2021 = 100,True
 1,Evolución frente a la inflación,Gastos generales,2021-01,100.0,Índice · ene 2021 = 100,False
 1,Evolución frente a la inflación,Gastos generales,2021-02,103.0637075526932,Índice · ene 2021 = 100,False
 1,Evolución frente a la inflación,Gastos generales,2021-03,105.71483460187353,Índice · ene 2021 = 100,False
@@ -269,8 +272,9 @@
 1,Evolución frente a la inflación,Gastos generales,2026-04,2347.119254976581,Índice · ene 2021 = 100,False
 1,Evolución frente a la inflación,Gastos generales,2026-05,2451.802180913349,Índice · ene 2021 = 100,False
 1,Evolución frente a la inflación,Gastos generales,2026-06,2498.774151053864,Índice · ene 2021 = 100,False
-1,Evolución frente a la inflación,Gastos generales,2026-07,2633.794093969555,Índice · ene 2021 = 100,True
+1,Evolución frente a la inflación,Gastos generales,2026-07,2633.794093969555,Índice · ene 2021 = 100,False
 1,Evolución frente a la inflación,Gastos generales,2026-08,2661.446135831382,Índice · ene 2021 = 100,True
+1,Evolución frente a la inflación,Gastos generales,2026-09,2695.1533225995317,Índice · ene 2021 = 100,True
 1,Evolución frente a la inflación,IPCBA,2021-01,100.00000000000001,Índice · ene 2021 = 100,False
 1,Evolución frente a la inflación,IPCBA,2021-02,102.85008961010887,Índice · ene 2021 = 100,False
 1,Evolución frente a la inflación,IPCBA,2021-03,106.84942014937344,Índice · ene 2021 = 100,False
@@ -339,6 +343,7 @@
 1,Evolución frente a la inflación,IPCBA,2026-06,3001.3053988128318,Índice · ene 2021 = 100,False
 1,Evolución frente a la inflación,IPCBA,2026-07,3089.3495625420496,Índice · ene 2021 = 100,False
 1,Evolución frente a la inflación,IPCBA,2026-08,3141.6170886256305,Índice · ene 2021 = 100,False
+1,Evolución frente a la inflación,IPCBA,2026-09,3199.3654455693654,Índice · ene 2021 = 100,False
 1,Variación mensual,Nivel general,2015-02,1.0703842940684938,%,False
 1,Variación mensual,Nivel general,2015-03,0.7800795577827202,%,False
 1,Variación mensual,Nivel general,2015-04,7.996719294648336,%,False
@@ -476,8 +481,9 @@
 1,Variación mensual,Nivel general,2026-04,3.0914178554036553,%,False
 1,Variación mensual,Nivel general,2026-05,2.2948828103897645,%,False
 1,Variación mensual,Nivel general,2026-06,3.4964489804001575,%,False
-1,Variación mensual,Nivel general,2026-07,2.2673844348304772,%,True
+1,Variación mensual,Nivel general,2026-07,2.2673844348304772,%,False
 1,Variación mensual,Nivel general,2026-08,3.357864974993152,%,True
+1,Variación mensual,Nivel general,2026-09,1.6798452476939119,%,True
 1,Variación mensual,Materiales,2015-02,1.960493093717508,%,False
 1,Variación mensual,Materiales,2015-03,1.4663753338189034,%,False
 1,Variación mensual,Materiales,2015-04,1.2585538594056533,%,False
@@ -615,8 +621,9 @@
 1,Variación mensual,Materiales,2026-04,1.5200633212122394,%,False
 1,Variación mensual,Materiales,2026-05,1.627127005182727,%,False
 1,Variación mensual,Materiales,2026-06,1.615371319041814,%,False
-1,Variación mensual,Materiales,2026-07,1.799497317502352,%,True
+1,Variación mensual,Materiales,2026-07,1.799497317502352,%,False
 1,Variación mensual,Materiales,2026-08,1.2530325803349562,%,True
+1,Variación mensual,Materiales,2026-09,1.5457983233646555,%,True
 1,Variación mensual,Mano de obra,2015-02,0.0,%,False
 1,Variación mensual,Mano de obra,2015-03,0.0,%,False
 1,Variación mensual,Mano de obra,2015-04,17.399267399267405,%,False
@@ -754,8 +761,9 @@
 1,Variación mensual,Mano de obra,2026-04,5.222131926128837,%,False
 1,Variación mensual,Mano de obra,2026-05,2.766684972316358,%,False
 1,Variación mensual,Mano de obra,2026-06,6.064514694272405,%,False
-1,Variación mensual,Mano de obra,2026-07,2.3137324792686487,%,True
+1,Variación mensual,Mano de obra,2026-07,2.3137324792686487,%,False
 1,Variación mensual,Mano de obra,2026-08,6.196891322875442,%,True
+1,Variación mensual,Mano de obra,2026-09,1.8941086962135811,%,True
 1,Variación mensual,Gastos generales,2015-02,1.0049725202826432,%,False
 1,Variación mensual,Gastos generales,2015-03,0.42493651862982595,%,False
 1,Variación mensual,Gastos generales,2015-04,3.5966768151091344,%,False
@@ -893,8 +901,9 @@
 1,Variación mensual,Gastos generales,2026-04,2.419653909732644,%,False
 1,Variación mensual,Gastos generales,2026-05,4.460059952846862,%,False
 1,Variación mensual,Gastos generales,2026-06,1.9158140288062286,%,False
-1,Variación mensual,Gastos generales,2026-07,5.403447240669834,%,True
+1,Variación mensual,Gastos generales,2026-07,5.403447240669834,%,False
 1,Variación mensual,Gastos generales,2026-08,1.0498938366191979,%,True
+1,Variación mensual,Gastos generales,2026-09,1.2664989275697147,%,True
 2,Permanencia de avisos,Total,2013-12,249.0,Días,False
 2,Permanencia de avisos,Total,2014-03,262.0,Días,False
 2,Permanencia de avisos,Total,2014-06,270.0,Días,False
@@ -3072,8 +3081,9 @@
 8,Costo por m² · USD MEP,Total Ciudad,2026-04,1024.8051316170643,USD MEP / m²,False
 8,Costo por m² · USD MEP,Total Ciudad,2026-05,1042.8997591416685,USD MEP / m²,False
 8,Costo por m² · USD MEP,Total Ciudad,2026-06,1051.4218869903152,USD MEP / m²,False
-8,Costo por m² · USD MEP,Total Ciudad,2026-07,1039.9908942003676,USD MEP / m²,True
-8,Costo por m² · USD MEP,Total Ciudad,2026-08,1069.4558927238807,USD MEP / m²,True
+8,Costo por m² · USD MEP,Total Ciudad,2026-07,1039.9908942003676,USD MEP / m²,False
+8,Costo por m² · USD MEP,Total Ciudad,2026-08,1069.4557882462686,USD MEP / m²,True
+8,Costo por m² · USD MEP,Total Ciudad,2026-09,1082.0968291098116,USD MEP / m²,True
 8,Por tipo de vivienda · USD MEP,Total Ciudad,2018-11,747.3694145699312,USD MEP / m²,False
 8,Por tipo de vivienda · USD MEP,Total Ciudad,2018-12,725.1714038974205,USD MEP / m²,True
 8,Por tipo de vivienda · USD MEP,Total Ciudad,2019-01,745.0232735862164,USD MEP / m²,False
@@ -3166,8 +3176,9 @@
 8,Por tipo de vivienda · USD MEP,Total Ciudad,2026-04,1024.8051316170643,USD MEP / m²,False
 8,Por tipo de vivienda · USD MEP,Total Ciudad,2026-05,1042.8997591416685,USD MEP / m²,False
 8,Por tipo de vivienda · USD MEP,Total Ciudad,2026-06,1051.4218869903152,USD MEP / m²,False
-8,Por tipo de vivienda · USD MEP,Total Ciudad,2026-07,1039.9908942003676,USD MEP / m²,True
-8,Por tipo de vivienda · USD MEP,Total Ciudad,2026-08,1069.4558927238807,USD MEP / m²,True
+8,Por tipo de vivienda · USD MEP,Total Ciudad,2026-07,1039.9908942003676,USD MEP / m²,False
+8,Por tipo de vivienda · USD MEP,Total Ciudad,2026-08,1069.4557882462686,USD MEP / m²,True
+8,Por tipo de vivienda · USD MEP,Total Ciudad,2026-09,1082.0968291098116,USD MEP / m²,True
 8,Por tipo de vivienda · USD MEP,Tipo I · sencilla,2018-11,726.7445170264027,USD MEP / m²,False
 8,Por tipo de vivienda · USD MEP,Tipo I · sencilla,2018-12,705.2287763301167,USD MEP / m²,True
 8,Por tipo de vivienda · USD MEP,Tipo I · sencilla,2019-01,725.4781737761105,USD MEP / m²,False
@@ -3260,8 +3271,9 @@
 8,Por tipo de vivienda · USD MEP,Tipo I · sencilla,2026-04,998.0094508342062,USD MEP / m²,False
 8,Por tipo de vivienda · USD MEP,Tipo I · sencilla,2026-05,1015.9994685192189,USD MEP / m²,False
 8,Por tipo de vivienda · USD MEP,Tipo I · sencilla,2026-06,1025.3861470606378,USD MEP / m²,False
-8,Por tipo de vivienda · USD MEP,Tipo I · sencilla,2026-07,1014.5958911184925,USD MEP / m²,True
-8,Por tipo de vivienda · USD MEP,Tipo I · sencilla,2026-08,1043.9487938432837,USD MEP / m²,True
+8,Por tipo de vivienda · USD MEP,Tipo I · sencilla,2026-07,1014.5958911184925,USD MEP / m²,False
+8,Por tipo de vivienda · USD MEP,Tipo I · sencilla,2026-08,1043.9486697761195,USD MEP / m²,True
+8,Por tipo de vivienda · USD MEP,Tipo I · sencilla,2026-09,1056.4526835607537,USD MEP / m²,True
 8,Por tipo de vivienda · USD MEP,Tipo II · sencilla con local,2018-11,700.0943593055314,USD MEP / m²,False
 8,Por tipo de vivienda · USD MEP,Tipo II · sencilla con local,2018-12,680.2127060413773,USD MEP / m²,True
 8,Por tipo de vivienda · USD MEP,Tipo II · sencilla con local,2019-01,699.2275369366865,USD MEP / m²,False
@@ -3354,8 +3366,9 @@
 8,Por tipo de vivienda · USD MEP,Tipo II · sencilla con local,2026-04,954.9198429954382,USD MEP / m²,False
 8,Por tipo de vivienda · USD MEP,Tipo II · sencilla con local,2026-05,972.0281903776101,USD MEP / m²,False
 8,Por tipo de vivienda · USD MEP,Tipo II · sencilla con local,2026-06,979.7455042872123,USD MEP / m²,False
-8,Por tipo de vivienda · USD MEP,Tipo II · sencilla con local,2026-07,970.0668998048146,USD MEP / m²,True
-8,Por tipo de vivienda · USD MEP,Tipo II · sencilla con local,2026-08,997.2288087686568,USD MEP / m²,True
+8,Por tipo de vivienda · USD MEP,Tipo II · sencilla con local,2026-07,970.0668998048146,USD MEP / m²,False
+8,Por tipo de vivienda · USD MEP,Tipo II · sencilla con local,2026-08,997.2287042910449,USD MEP / m²,True
+8,Por tipo de vivienda · USD MEP,Tipo II · sencilla con local,2026-09,1009.350987654321,USD MEP / m²,True
 8,Por tipo de vivienda · USD MEP,Tipo III · confortable,2018-11,859.7606120066565,USD MEP / m²,False
 8,Por tipo de vivienda · USD MEP,Tipo III · confortable,2018-12,833.5756016971426,USD MEP / m²,True
 8,Por tipo de vivienda · USD MEP,Tipo III · confortable,2019-01,854.7142906766709,USD MEP / m²,False
@@ -3448,8 +3461,9 @@
 8,Por tipo de vivienda · USD MEP,Tipo III · confortable,2026-04,1200.7826645571436,USD MEP / m²,False
 8,Por tipo de vivienda · USD MEP,Tipo III · confortable,2026-05,1220.3379292155184,USD MEP / m²,False
 8,Por tipo de vivienda · USD MEP,Tipo III · confortable,2026-06,1228.2402134353217,USD MEP / m²,False
-8,Por tipo de vivienda · USD MEP,Tipo III · confortable,2026-07,1210.9231562967275,USD MEP / m²,True
-8,Por tipo de vivienda · USD MEP,Tipo III · confortable,2026-08,1243.993161380597,USD MEP / m²,True
+8,Por tipo de vivienda · USD MEP,Tipo III · confortable,2026-07,1210.9231562967275,USD MEP / m²,False
+8,Por tipo de vivienda · USD MEP,Tipo III · confortable,2026-08,1243.993030783582,USD MEP / m²,True
+8,Por tipo de vivienda · USD MEP,Tipo III · confortable,2026-09,1257.4784600389864,USD MEP / m²,True
 8,Por tipo de vivienda · USD MEP,Tipo IV · suntuosa,2018-11,790.7483917438713,USD MEP / m²,False
 8,Por tipo de vivienda · USD MEP,Tipo IV · suntuosa,2018-12,766.113768632899,USD MEP / m²,True
 8,Por tipo de vivienda · USD MEP,Tipo IV · suntuosa,2019-01,785.5411861423742,USD MEP / m²,False
@@ -3542,8 +3556,9 @@
 8,Por tipo de vivienda · USD MEP,Tipo IV · suntuosa,2026-04,1074.1929679019263,USD MEP / m²,False
 8,Por tipo de vivienda · USD MEP,Tipo IV · suntuosa,2026-05,1093.078787547027,USD MEP / m²,False
 8,Por tipo de vivienda · USD MEP,Tipo IV · suntuosa,2026-06,1101.395298871137,USD MEP / m²,False
-8,Por tipo de vivienda · USD MEP,Tipo IV · suntuosa,2026-07,1089.791693490395,USD MEP / m²,True
-8,Por tipo de vivienda · USD MEP,Tipo IV · suntuosa,2026-08,1120.6835904850748,USD MEP / m²,True
+8,Por tipo de vivienda · USD MEP,Tipo IV · suntuosa,2026-07,1089.791693490395,USD MEP / m²,False
+8,Por tipo de vivienda · USD MEP,Tipo IV · suntuosa,2026-08,1120.683531716418,USD MEP / m²,True
+8,Por tipo de vivienda · USD MEP,Tipo IV · suntuosa,2026-09,1133.868570500325,USD MEP / m²,True
 8,Variación mensual · USD MEP,Total Ciudad,2018-12,-2.9701524092050735,%,True
 8,Variación mensual · USD MEP,Total Ciudad,2019-01,2.7375417152555093,%,True
 8,Variación mensual · USD MEP,Total Ciudad,2019-02,-1.262711262551497,%,False
@@ -3635,8 +3650,9 @@
 8,Variación mensual · USD MEP,Total Ciudad,2026-04,2.979565575296106,%,False
 8,Variación mensual · USD MEP,Total Ciudad,2026-05,1.7656651949090385,%,False
 8,Variación mensual · USD MEP,Total Ciudad,2026-06,0.8171569485892594,%,False
-8,Variación mensual · USD MEP,Total Ciudad,2026-07,-1.087193726075908,%,True
-8,Variación mensual · USD MEP,Total Ciudad,2026-08,2.83319774123294,%,True
+8,Variación mensual · USD MEP,Total Ciudad,2026-07,-1.087193726075908,%,False
+8,Variación mensual · USD MEP,Total Ciudad,2026-08,2.83318769522074,%,True
+8,Variación mensual · USD MEP,Total Ciudad,2026-09,1.1820068676492212,%,True
 8,Costo por m² · pesos,Total Ciudad,2015-01,8954.7,ARS / m²,False
 8,Costo por m² · pesos,Total Ciudad,2015-02,9052.68,ARS / m²,False
 8,Costo por m² · pesos,Total Ciudad,2015-03,9124.31,ARS / m²,False
@@ -3775,5 +3791,6 @@
 8,Costo por m² · pesos,Total Ciudad,2026-04,1463286.64,ARS / m²,False
 8,Costo por m² · pesos,Total Ciudad,2026-05,1496918.72,ARS / m²,False
 8,Costo por m² · pesos,Total Ciudad,2026-06,1549509.11,ARS / m²,False
-8,Costo por m² · pesos,Total Ciudad,2026-07,1584566.3,ARS / m²,True
-8,Costo por m² · pesos,Total Ciudad,2026-08,1637795.31,ARS / m²,True
+8,Costo por m² · pesos,Total Ciudad,2026-07,1584566.3,ARS / m²,False
+8,Costo por m² · pesos,Total Ciudad,2026-08,1637795.15,ARS / m²,True
+8,Costo por m² · pesos,Total Ciudad,2026-09,1665347.02,ARS / m²,True
