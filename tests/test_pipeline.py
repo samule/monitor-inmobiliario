@@ -69,7 +69,11 @@ class PipelineTests(unittest.TestCase):
         self.assertAlmostEqual(actual,expected,places=12)
 
     def test_construction_cost_uses_official_total_and_same_month_mep(self):
-        self.assertAlmostEqual(self.ds['cost_m2'][0]['2026-08']['values'][0],1637795.31,places=2)
+        # La cifra de control se contrastó con la planilla guardada el 13/10/2026; la fuente
+        # revisa meses recientes en publicaciones posteriores, así que se lee esa copia fija.
+        source=next(s for s in json.loads((ROOT/'config/sources.json').read_text()) if s['id']=='cost_m2')
+        original=m.parse_source(source,ROOT/'data/raw/cost_m2/f708835148156f0d.xlsx',self.settings,date(2026,10,13))
+        self.assertAlmostEqual(original[0]['2026-08']['values'][0],1637795.31,places=2)
         for i,line in enumerate(self.cards[7]['views'][1]['lines']):
             for k,value,provisional in line['points']:
                 cost=self.ds['cost_m2'][0][k]
