@@ -7,6 +7,16 @@ from datetime import date
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
+# Planillas guardadas en la primera publicación de cada fuente, contra las que se contrastaron
+# a mano las cifras de control. Las fuentes revisan meses recientes en publicaciones
+# posteriores, así que los controles leen estas copias fijas y no la última descarga.
+CONTROL_SNAPSHOTS={
+    'icc':'data/raw/icc/52c930aeaedb33fa.xlsx',
+    'rent':'data/raw/rent/ac3e2de8e8c2c5f4.xlsx',
+    'ripte':'data/raw/ripte/3e87f594ae7a215d.pdf',
+    'new1':'data/raw/new1/34017f66b3ba8f40.xlsx',
+    'cost_m2':'data/raw/cost_m2/f708835148156f0d.xlsx',
+}
 spec=importlib.util.spec_from_file_location('monitor',ROOT/'scripts/update.py')
 m=importlib.util.module_from_spec(spec); spec.loader.exec_module(m)
 
@@ -17,15 +27,19 @@ class PipelineTests(unittest.TestCase):
         sources=json.loads((ROOT/'config/sources.json').read_text())
         manifest=json.loads((ROOT/'data/manifest.json').read_text())
         cls.ds={s['id']:m.parse_source(s,ROOT/manifest[s['id']]['path'],cls.settings,date(2026,10,13)) for s in sources}
+        by_id={s['id']:s for s in sources}
+        cls.original={k:m.parse_source(by_id[k],ROOT/path,cls.settings,date(2026,10,13)) for k,path in CONTROL_SNAPSHOTS.items()}
         cls.cards=m.build_charts(cls.ds,cls.settings)
 
     def test_source_controls(self):
         # Cifras contrastadas con los originales de la primera publicación.
-        self.assertAlmostEqual(self.ds['icc'][0]['2026-08']['values'][0],34801.42,places=2)
-        self.assertAlmostEqual(self.ds['rent'][0]['2026-08']['values'][0],597578.88723,places=2)
-        self.assertAlmostEqual(self.ds['ripte'][0]['2026-07']['values'][0],1946028.12,places=2)
+        self.assertAlmostEqual(self.original['icc'][0]['2026-08']['values'][0],34801.42,places=2)
+        self.assertAlmostEqual(self.original['rent'][0]['2026-08']['values'][0],597578.88723,places=2)
+        self.assertAlmostEqual(self.original['ripte'][0]['2026-07']['values'][0],1946028.12,places=2)
+        self.assertAlmostEqual(self.original['new1'][0]['2026-06']['values'][0],3105.25968287032,places=5)
+        self.assertAlmostEqual(self.original['cost_m2'][0]['2026-08']['values'][0],1637795.31,places=2)
+        # La serie actual no puede perder historia respecto de la primera publicación.
         self.assertGreaterEqual(len(self.ds['ripte'][0]),385)
-        self.assertAlmostEqual(self.ds['new1'][0]['2026-06']['values'][0],3105.25968287032,places=5)
 
     def test_all_eight_and_correct_frequency(self):
         self.assertEqual([c['id'] for c in self.cards],list(range(1,9)))
@@ -69,7 +83,6 @@ class PipelineTests(unittest.TestCase):
         self.assertAlmostEqual(actual,expected,places=12)
 
     def test_construction_cost_uses_official_total_and_same_month_mep(self):
-        self.assertAlmostEqual(self.ds['cost_m2'][0]['2026-08']['values'][0],1637795.31,places=2)
         for i,line in enumerate(self.cards[7]['views'][1]['lines']):
             for k,value,provisional in line['points']:
                 cost=self.ds['cost_m2'][0][k]
