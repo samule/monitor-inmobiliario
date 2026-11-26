@@ -66,8 +66,9 @@
 1,Evolución frente a la inflación,Nivel general,2026-05,2203.586613338727,Índice · ene 2021 = 100,False
 1,Evolución frente a la inflación,Nivel general,2026-06,2280.6338950130435,Índice · ene 2021 = 100,False
 1,Evolución frente a la inflación,Nivel general,2026-07,2332.3446329640374,Índice · ene 2021 = 100,False
-1,Evolución frente a la inflación,Nivel general,2026-08,2410.6616164904694,Índice · ene 2021 = 100,True
-1,Evolución frente a la inflación,Nivel general,2026-09,2451.157001093066,Índice · ene 2021 = 100,True
+1,Evolución frente a la inflación,Nivel general,2026-08,2410.6616164904694,Índice · ene 2021 = 100,False
+1,Evolución frente a la inflación,Nivel general,2026-09,2451.1195958011867,Índice · ene 2021 = 100,True
+1,Evolución frente a la inflación,Nivel general,2026-10,2485.490902894477,Índice · ene 2021 = 100,True
 1,Evolución frente a la inflación,Materiales,2021-01,100.0,Índice · ene 2021 = 100,False
 1,Evolución frente a la inflación,Materiales,2021-02,105.01761348434852,Índice · ene 2021 = 100,False
 1,Evolución frente a la inflación,Materiales,2021-03,109.31731026487114,Índice · ene 2021 = 100,False
@@ -135,8 +136,9 @@
 1,Evolución frente a la inflación,Materiales,2026-05,1883.1958441095157,Índice · ene 2021 = 100,False
 1,Evolución frente a la inflación,Materiales,2026-06,1913.6164496566485,Índice · ene 2021 = 100,False
 1,Evolución frente a la inflación,Materiales,2026-07,1948.0519263355036,Índice · ene 2021 = 100,False
-1,Evolución frente a la inflación,Materiales,2026-08,1972.46165165433,Índice · ene 2021 = 100,True
-1,Evolución frente a la inflación,Materiales,2026-09,2002.9519307946132,Índice · ene 2021 = 100,True
+1,Evolución frente a la inflación,Materiales,2026-08,1972.46165165433,Índice · ene 2021 = 100,False
+1,Evolución frente a la inflación,Materiales,2026-09,2002.888945866405,Índice · ene 2021 = 100,True
+1,Evolución frente a la inflación,Materiales,2026-10,2023.8350575225186,Índice · ene 2021 = 100,True
 1,Evolución frente a la inflación,Mano de obra,2021-01,100.0,Índice · ene 2021 = 100,False
 1,Evolución frente a la inflación,Mano de obra,2021-02,106.39741144171289,Índice · ene 2021 = 100,False
 1,Evolución frente a la inflación,Mano de obra,2021-03,106.39741144171289,Índice · ene 2021 = 100,False
@@ -204,8 +206,9 @@
 1,Evolución frente a la inflación,Mano de obra,2026-05,2725.582514752287,Índice · ene 2021 = 100,False
 1,Evolución frente a la inflación,Mano de obra,2026-06,2890.8758668639584,Índice · ene 2021 = 100,False
 1,Evolución frente a la inflación,Mano de obra,2026-07,2957.7630007309294,Índice · ene 2021 = 100,False
-1,Evolución frente a la inflación,Mano de obra,2026-08,3141.0523594744445,Índice · ene 2021 = 100,True
+1,Evolución frente a la inflación,Mano de obra,2026-08,3141.0523594744445,Índice · ene 2021 = 100,False
 1,Evolución frente a la inflación,Mano de obra,2026-09,3200.547305367872,Índice · ene 2021 = 100,True
+1,Evolución frente a la inflación,Mano de obra,2026-10,3258.2470183445353,Índice · ene 2021 = 100,True
 1,Evolución frente a la inflación,Gastos generales,2021-01,100.0,Índice · ene 2021 = 100,False
 1,Evolución frente a la inflación,Gastos generales,2021-02,103.0637075526932,Índice · ene 2021 = 100,False
 1,Evolución frente a la inflación,Gastos generales,2021-03,105.71483460187353,Índice · ene 2021 = 100,False
@@ -273,8 +276,9 @@
 1,Evolución frente a la inflación,Gastos generales,2026-05,2451.802180913349,Índice · ene 2021 = 100,False
 1,Evolución frente a la inflación,Gastos generales,2026-06,2498.774151053864,Índice · ene 2021 = 100,False
 1,Evolución frente a la inflación,Gastos generales,2026-07,2633.794093969555,Índice · ene 2021 = 100,False
-1,Evolución frente a la inflación,Gastos generales,2026-08,2661.446135831382,Índice · ene 2021 = 100,True
+1,Evolución frente a la inflación,Gastos generales,2026-08,2661.446135831382,Índice · ene 2021 = 100,False
 1,Evolución frente a la inflación,Gastos generales,2026-09,2695.1533225995317,Índice · ene 2021 = 100,True
+1,Evolución frente a la inflación,Gastos generales,2026-10,2732.079735070258,Índice · ene 2021 = 100,True
 1,Evolución frente a la inflación,IPCBA,2021-01,100.00000000000001,Índice · ene 2021 = 100,False
 1,Evolución frente a la inflación,IPCBA,2021-02,102.85008961010887,Índice · ene 2021 = 100,False
 1,Evolución frente a la inflación,IPCBA,2021-03,106.84942014937344,Índice · ene 2021 = 100,False
@@ -344,6 +348,7 @@
 1,Evolución frente a la inflación,IPCBA,2026-07,3089.3495625420496,Índice · ene 2021 = 100,False
 1,Evolución frente a la inflación,IPCBA,2026-08,3141.6170886256305,Índice · ene 2021 = 100,False
 1,Evolución frente a la inflación,IPCBA,2026-09,3199.3654455693654,Índice · ene 2021 = 100,False
+1,Evolución frente a la inflación,IPCBA,2026-10,3260.6708980382327,Índice · ene 2021 = 100,False
 1,Variación mensual,Nivel general,2015-02,1.0703842940684938,%,False
 1,Variación mensual,Nivel general,2015-03,0.7800795577827202,%,False
 1,Variación mensual,Nivel general,2015-04,7.996719294648336,%,False
@@ -482,8 +487,9 @@
 1,Variación mensual,Nivel general,2026-05,2.2948828103897645,%,False
 1,Variación mensual,Nivel general,2026-06,3.4964489804001575,%,False
 1,Variación mensual,Nivel general,2026-07,2.2673844348304772,%,False
-1,Variación mensual,Nivel general,2026-08,3.357864974993152,%,True
-1,Variación mensual,Nivel general,2026-09,1.6798452476939119,%,True
+1,Variación mensual,Nivel general,2026-08,3.357864974993152,%,False
+1,Variación mensual,Nivel general,2026-09,1.6782935868708826,%,True
+1,Variación mensual,Nivel general,2026-10,1.402269687377533,%,True
 1,Variación mensual,Materiales,2015-02,1.960493093717508,%,False
 1,Variación mensual,Materiales,2015-03,1.4663753338189034,%,False
 1,Variación mensual,Materiales,2015-04,1.2585538594056533,%,False
@@ -622,8 +628,9 @@
 1,Variación mensual,Materiales,2026-05,1.627127005182727,%,False
 1,Variación mensual,Materiales,2026-06,1.615371319041814,%,False
 1,Variación mensual,Materiales,2026-07,1.799497317502352,%,False
-1,Variación mensual,Materiales,2026-08,1.2530325803349562,%,True
-1,Variación mensual,Materiales,2026-09,1.5457983233646555,%,True
+1,Variación mensual,Materiales,2026-08,1.2530325803349562,%,False
+1,Variación mensual,Materiales,2026-09,1.5426051090299042,%,True
+1,Variación mensual,Materiales,2026-10,1.045794960291846,%,True
 1,Variación mensual,Mano de obra,2015-02,0.0,%,False
 1,Variación mensual,Mano de obra,2015-03,0.0,%,False
 1,Variación mensual,Mano de obra,2015-04,17.399267399267405,%,False
@@ -762,8 +769,9 @@
 1,Variación mensual,Mano de obra,2026-05,2.766684972316358,%,False
 1,Variación mensual,Mano de obra,2026-06,6.064514694272405,%,False
 1,Variación mensual,Mano de obra,2026-07,2.3137324792686487,%,False
-1,Variación mensual,Mano de obra,2026-08,6.196891322875442,%,True
+1,Variación mensual,Mano de obra,2026-08,6.196891322875442,%,False
 1,Variación mensual,Mano de obra,2026-09,1.8941086962135811,%,True
+1,Variación mensual,Mano de obra,2026-10,1.802807691043684,%,True
 1,Variación mensual,Gastos generales,2015-02,1.0049725202826432,%,False
 1,Variación mensual,Gastos generales,2015-03,0.42493651862982595,%,False
 1,Variación mensual,Gastos generales,2015-04,3.5966768151091344,%,False
@@ -902,8 +910,9 @@
 1,Variación mensual,Gastos generales,2026-05,4.460059952846862,%,False
 1,Variación mensual,Gastos generales,2026-06,1.9158140288062286,%,False
 1,Variación mensual,Gastos generales,2026-07,5.403447240669834,%,False
-1,Variación mensual,Gastos generales,2026-08,1.0498938366191979,%,True
+1,Variación mensual,Gastos generales,2026-08,1.0498938366191979,%,False
 1,Variación mensual,Gastos generales,2026-09,1.2664989275697147,%,True
+1,Variación mensual,Gastos generales,2026-10,1.3701043336232122,%,True
 2,Permanencia de avisos,Total,2013-12,249.0,Días,False
 2,Permanencia de avisos,Total,2014-03,262.0,Días,False
 2,Permanencia de avisos,Total,2014-06,270.0,Días,False
@@ -1265,8 +1274,9 @@
 3,Oferta de alquileres,1 ambiente,2026-05,35033.33,m²,False
 3,Oferta de alquileres,1 ambiente,2026-06,35887.16999999999,m²,False
 3,Oferta de alquileres,1 ambiente,2026-07,34690.07,m²,False
-3,Oferta de alquileres,1 ambiente,2026-08,37487.96999999999,m²,True
+3,Oferta de alquileres,1 ambiente,2026-08,37487.96999999999,m²,False
 3,Oferta de alquileres,1 ambiente,2026-09,39955.5,m²,True
+3,Oferta de alquileres,1 ambiente,2026-10,43477.78,m²,True
 3,Oferta de alquileres,2 ambientes,2013-07,49253.0,m²,False
 3,Oferta de alquileres,2 ambientes,2013-08,38923.0,m²,False
 3,Oferta de alquileres,2 ambientes,2013-09,36907.0,m²,False
@@ -1424,8 +1434,9 @@
 3,Oferta de alquileres,2 ambientes,2026-05,55937.40999999999,m²,False
 3,Oferta de alquileres,2 ambientes,2026-06,57259.74000000001,m²,False
 3,Oferta de alquileres,2 ambientes,2026-07,56413.520000000004,m²,False
-3,Oferta de alquileres,2 ambientes,2026-08,54796.44000000001,m²,True
+3,Oferta de alquileres,2 ambientes,2026-08,54796.44000000001,m²,False
 3,Oferta de alquileres,2 ambientes,2026-09,64593.98000000002,m²,True
+3,Oferta de alquileres,2 ambientes,2026-10,67701.21,m²,True
 3,Oferta de alquileres,3 ambientes,2013-07,37220.0,m²,False
 3,Oferta de alquileres,3 ambientes,2013-08,29659.0,m²,False
 3,Oferta de alquileres,3 ambientes,2013-09,33450.0,m²,False
@@ -1583,521 +1594,525 @@
 3,Oferta de alquileres,3 ambientes,2026-05,41529.06999999999,m²,False
 3,Oferta de alquileres,3 ambientes,2026-06,41409.19000000001,m²,False
 3,Oferta de alquileres,3 ambientes,2026-07,39394.80000000001,m²,False
-3,Oferta de alquileres,3 ambientes,2026-08,38059.13,m²,True
+3,Oferta de alquileres,3 ambientes,2026-08,38059.13,m²,False
 3,Oferta de alquileres,3 ambientes,2026-09,41045.06999999999,m²,True
-4,Alquiler real,1 ambiente,2012-07,731942.5208482995,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2012-08,717298.1121990639,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2012-09,731497.0755205968,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2012-10,732482.2444073255,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2012-11,714426.5644237911,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2012-12,720351.6816922759,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2013-01,694980.6696900972,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2013-02,725730.1566311556,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2013-03,691425.5639781373,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2013-04,717680.2024064426,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2013-05,722480.1696574247,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2013-06,710173.3663517224,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2013-07,715926.9212265118,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2013-08,699533.8156971502,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2013-09,704953.3112635792,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2013-10,691379.4870185761,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2013-11,675048.4851264942,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2013-12,673597.8111693204,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2014-01,667425.3368186636,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2014-02,654619.6474016217,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2014-03,660759.0619661538,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2014-04,644360.8868355093,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2014-05,637782.0971259923,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2014-06,654674.7717023692,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2014-07,659988.0188092066,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2014-08,648031.535945438,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2014-09,646658.1657277457,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2014-10,635325.1927155002,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2014-11,642969.6518213432,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2014-12,644425.7931624854,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2015-01,629722.3401054495,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2015-02,646522.6459297542,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2015-03,652807.3700671457,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2015-04,646950.4973007762,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2015-05,656986.9123384763,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2015-06,656955.217544627,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2015-07,670375.3431745785,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2015-08,635711.2007647492,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2015-09,688357.2605760989,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2015-10,648142.1288292928,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2015-11,676748.1597659028,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2015-12,688666.6551898073,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2016-01,699310.1317054433,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2016-02,677702.2460698035,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2016-03,658786.0435173563,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2016-04,630008.7464682683,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2016-05,640474.2695919585,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2016-06,621089.7439734358,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2016-07,617618.9806546962,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2016-08,642890.8158854056,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2016-09,674151.0551612688,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2016-10,648991.5883209555,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2016-11,636619.9552055238,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2016-12,642204.7570923768,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2017-01,653929.0934689033,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2017-02,663009.0411585651,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2017-03,668316.1266567681,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2017-04,668280.098168831,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2017-05,666438.014823419,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2017-06,675270.1829284247,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2017-07,662355.5401944846,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2017-08,677842.8030270751,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2017-09,690967.0045251831,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2017-10,710769.2015142606,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2017-11,706533.3116388468,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2017-12,689235.3964427467,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2018-01,720719.6450352416,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2018-02,694030.8167081533,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2018-03,716783.6006445452,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2018-04,722812.0914734309,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2018-05,701068.1429982071,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2018-06,702811.8132998111,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2018-07,683869.1611251149,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2018-08,687600.9998741406,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2018-09,672774.7481456884,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2018-10,659155.4872915751,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2018-11,653375.2355270528,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2018-12,633371.5917257131,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2019-01,639296.2046639837,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2019-02,633057.6095321284,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2019-03,623730.0164360795,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2019-04,619542.1115750404,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2019-05,610860.8852652966,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2019-06,613608.8606266886,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2019-07,610710.9059724181,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2019-08,610712.1748549518,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2019-09,591744.3065773367,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2019-10,596303.7157502238,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2019-11,579507.456436684,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2019-12,574412.038585287,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2020-01,582953.270763535,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2020-02,589024.8877054412,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2020-03,563991.4486659047,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2020-04,552539.5808715344,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2020-05,599157.4042009604,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2020-06,614871.7529441555,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2020-07,641901.3170225375,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2020-08,657031.9421234281,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2020-09,675273.8950059648,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2020-10,682440.6295031738,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2020-11,686418.4666781331,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2020-12,679676.3178059611,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2021-01,672477.5420104767,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2021-02,684555.8735215488,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2021-03,685659.0828299999,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2021-04,689272.0306091043,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2021-05,690359.6277375775,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2021-06,686444.6304233894,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2021-07,692526.1839074251,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2021-08,692907.4777726297,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2021-09,687129.2958278666,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2021-10,684703.753299617,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2021-11,684616.665160983,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2021-12,688081.2999582479,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2022-01,697304.2948621641,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2022-02,718566.5330120727,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2022-03,697279.8630378519,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2022-04,706782.4014542502,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2022-05,737283.8929039806,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2022-06,728487.2372298894,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2022-07,722011.0783949863,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2022-08,743132.9145635443,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2022-09,738340.017015424,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2022-10,736549.0905650316,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2022-11,737107.1197320678,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2022-12,736211.2548319799,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2023-01,753538.6556437844,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2023-02,764756.7031739847,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2023-03,788859.9423862917,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2023-04,849996.4371540102,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2023-05,828613.8540695478,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2023-06,854468.5781664919,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2023-07,922583.7395849952,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2023-08,1000771.9725530752,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2023-09,988429.2330280007,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2023-10,1077625.138539922,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2023-11,1017555.9871961896,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2023-12,981113.3362135844,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2024-01,839044.5199818236,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2024-02,759101.5425555143,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2024-03,698058.3390644179,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2024-04,649512.0470529116,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2024-05,639640.3077252684,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2024-06,631501.428008709,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2024-07,619489.9560112305,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2024-08,630169.4907508775,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2024-09,625823.9161634418,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2024-10,622972.3725715616,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2024-11,609810.9799934549,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2024-12,608196.6399586756,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2025-01,622890.3077992636,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2025-02,629582.8603279495,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2025-03,626896.0383852518,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2025-04,628231.4222550439,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2025-05,626340.9873766593,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2025-06,628318.2730662782,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2025-07,624398.4167724038,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2025-08,637531.8323996149,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2025-09,625441.5862462713,ARS a precios constantes,False
-4,Alquiler real,1 ambiente,2025-10,624749.2770062105,ARS a precios constantes,True
-4,Alquiler real,1 ambiente,2025-11,625127.2115568116,ARS a precios constantes,True
-4,Alquiler real,1 ambiente,2025-12,627543.362016896,ARS a precios constantes,True
-4,Alquiler real,1 ambiente,2026-01,633163.3476738025,ARS a precios constantes,True
-4,Alquiler real,1 ambiente,2026-02,640881.1322152927,ARS a precios constantes,True
-4,Alquiler real,1 ambiente,2026-03,635083.2390940302,ARS a precios constantes,True
-4,Alquiler real,1 ambiente,2026-04,620648.9004097381,ARS a precios constantes,True
-4,Alquiler real,1 ambiente,2026-05,620241.2153339108,ARS a precios constantes,True
-4,Alquiler real,1 ambiente,2026-06,624567.8618850539,ARS a precios constantes,True
-4,Alquiler real,1 ambiente,2026-07,611372.2095862111,ARS a precios constantes,True
-4,Alquiler real,1 ambiente,2026-08,608563.4209616059,ARS a precios constantes,True
-4,Alquiler real,1 ambiente,2026-09,599948.3425500001,ARS a precios constantes,True
-4,Alquiler real,2 ambientes,2012-07,999033.8838169439,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2012-08,965189.516998857,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2012-09,972634.9918228383,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2012-10,980947.2413004804,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2012-11,941598.2071848855,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2012-12,968052.4841560051,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2013-01,944328.0516827381,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2013-02,950273.6752282538,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2013-03,961944.2883629911,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2013-04,967884.1331816129,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2013-05,954259.6289734241,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2013-06,949466.5536298674,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2013-07,965244.190574659,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2013-08,935018.1384118577,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2013-09,938102.6007178127,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2013-10,918015.2118223404,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2013-11,922784.5560652416,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2013-12,917442.162703514,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2014-01,873158.674155406,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2014-02,878650.5169248108,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2014-03,876601.7673435517,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2014-04,877816.9426052959,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2014-05,852096.1148799207,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2014-06,891820.478777929,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2014-07,866466.5716141098,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2014-08,859402.9581473633,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2014-09,866206.3054653389,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2014-10,848461.817919468,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2014-11,845319.7158021212,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2014-12,863134.2115178686,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2015-01,842539.713859259,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2015-02,850619.231560163,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2015-03,864129.9161238463,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2015-04,869157.3660526886,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2015-05,940421.0112593417,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2015-06,956912.4651853282,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2015-07,958011.7441887973,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2015-08,947248.6040697517,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2015-09,962877.7659282894,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2015-10,915727.4247333328,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2015-11,979165.5300499041,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2015-12,935252.3102721715,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2016-01,944198.4184435101,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2016-02,929382.2197452167,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2016-03,921851.874699477,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2016-04,867240.0085479557,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2016-05,889950.1273368165,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2016-06,867579.8470128216,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2016-07,881842.0810423511,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2016-08,927314.060329455,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2016-09,923270.6228782778,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2016-10,904297.7332800264,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2016-11,897897.5149554877,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2016-12,896184.0344176327,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2017-01,893245.5827348871,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2017-02,901309.6638211077,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2017-03,900691.3547549711,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2017-04,902232.0381690776,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2017-05,914447.6025230864,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2017-06,923506.4198693285,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2017-07,917028.0971020793,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2017-08,930976.644633134,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2017-09,961403.0465930935,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2017-10,979584.5671845822,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2017-11,949473.8018706361,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2017-12,938568.4996394613,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2018-01,963351.0319633296,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2018-02,955174.960803548,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2018-03,952794.7199759263,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2018-04,959747.9622565246,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2018-05,952189.714363346,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2018-06,951017.8782224413,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2018-07,952221.7654997066,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2018-08,931403.3236682235,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2018-09,908199.2123739265,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2018-10,866415.3625316573,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2018-11,854686.1655447447,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2018-12,837900.7994930921,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2019-01,838297.7648154051,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2019-02,848504.4704373457,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2019-03,835534.1299682443,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2019-04,811075.6386515558,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2019-05,798403.4483408992,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2019-06,809410.6896429042,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2019-07,805371.385769086,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2019-08,816598.4164168759,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2019-09,783443.2521285026,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2019-10,778019.75547514,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2019-11,763140.0541166313,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2019-12,750983.8186752083,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2020-01,761831.3760705775,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2020-02,740112.0877925998,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2020-03,759207.2656375368,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2020-04,726968.1842545856,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2020-05,786350.7005627474,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2020-06,785529.1170294037,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2020-07,858148.8785277936,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2020-08,885154.1586366079,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2020-09,899637.8330581839,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2020-10,903488.8263486236,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2020-11,903161.0638465034,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2020-12,882878.155241812,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2021-01,880252.8635650121,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2021-02,889560.4006707495,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2021-03,912388.404688728,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2021-04,914116.7253500575,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2021-05,918989.4225943314,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2021-06,914726.1601540098,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2021-07,930846.8196351712,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2021-08,936096.2686626636,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2021-09,926364.4121251346,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2021-10,921267.4993728475,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2021-11,923170.6195564158,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2021-12,929769.6404853315,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2022-01,927069.7974846434,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2022-02,940014.9530469931,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2022-03,970085.4257954202,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2022-04,965314.7975608954,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2022-05,1010317.4652045441,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2022-06,981975.2752976655,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2022-07,983768.0141639727,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2022-08,991686.7418607746,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2022-09,984425.7112031541,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2022-10,945234.7037654149,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2022-11,971307.5177475814,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2022-12,967543.9092949074,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2023-01,961699.1129580174,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2023-02,970050.4356740701,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2023-03,1027009.539222298,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2023-04,1076067.0183677874,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2023-05,1116982.763455487,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2023-06,1192868.8041096989,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2023-07,1237053.4439087552,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2023-08,1420719.1297380636,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2023-09,1382819.2536827228,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2023-10,1496264.8743829657,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2023-11,1480210.3739017262,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2023-12,1342964.1522871973,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2024-01,1149684.858421765,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2024-02,1040400.0938561478,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2024-03,944117.5517906315,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2024-04,877979.1827585549,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2024-05,865058.8570382583,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2024-06,850473.0407268548,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2024-07,837517.5313198263,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2024-08,844569.6765060374,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2024-09,842511.7598486393,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2024-10,843374.0161318434,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2024-11,834128.9343229418,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2024-12,825853.274692516,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2025-01,832083.2080953893,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2025-02,855969.6089155005,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2025-03,835663.9884668086,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2025-04,845407.4019535446,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2025-05,854656.7007053974,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2025-06,852534.4423345216,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2025-07,842920.8357726722,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2025-08,851912.7463983943,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2025-09,852452.7942819583,ARS a precios constantes,False
-4,Alquiler real,2 ambientes,2025-10,850529.9365429231,ARS a precios constantes,True
-4,Alquiler real,2 ambientes,2025-11,835343.4172306636,ARS a precios constantes,True
-4,Alquiler real,2 ambientes,2025-12,839167.3075671075,ARS a precios constantes,True
-4,Alquiler real,2 ambientes,2026-01,839876.9637619101,ARS a precios constantes,True
-4,Alquiler real,2 ambientes,2026-02,842444.5259922309,ARS a precios constantes,True
-4,Alquiler real,2 ambientes,2026-03,854795.8809703371,ARS a precios constantes,True
-4,Alquiler real,2 ambientes,2026-04,839763.7195296807,ARS a precios constantes,True
-4,Alquiler real,2 ambientes,2026-05,836164.8742870289,ARS a precios constantes,True
-4,Alquiler real,2 ambientes,2026-06,835054.357798794,ARS a precios constantes,True
-4,Alquiler real,2 ambientes,2026-07,824639.1938217208,ARS a precios constantes,True
-4,Alquiler real,2 ambientes,2026-08,826570.7959446688,ARS a precios constantes,True
-4,Alquiler real,2 ambientes,2026-09,810786.977214,ARS a precios constantes,True
-4,Alquiler real,3 ambientes,2012-07,1585863.6215758652,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2012-08,1546091.9681428107,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2012-09,1540623.7131963668,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2012-10,1529191.2033542444,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2012-11,1464590.3238785928,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2012-12,1497278.4011010714,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2013-01,1413983.0051921606,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2013-02,1447347.8288065929,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2013-03,1453509.9262418617,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2013-04,1554285.1068301424,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2013-05,1469830.7585104299,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2013-06,1457481.1616539434,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2013-07,1474431.0863965678,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2013-08,1416623.371375056,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2013-09,1423681.331134132,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2013-10,1445773.5006830033,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2013-11,1454821.5166762138,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2013-12,1372814.19559225,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2014-01,1279265.1802854743,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2014-02,1332939.0353912916,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2014-03,1339874.9148389136,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2014-04,1376362.8462832246,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2014-05,1284306.9306812056,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2014-06,1348583.4920913568,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2014-07,1329455.932055997,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2014-08,1298309.1710027817,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2014-09,1300392.0992923116,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2014-10,1361090.7159684948,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2014-11,1329794.9849203592,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2014-12,1401891.4364914037,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2015-01,1389990.8885837744,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2015-02,1347501.481841729,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2015-03,1376507.4643948737,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2015-04,1364373.605824088,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2015-05,1496937.19385325,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2015-06,1497947.822847139,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2015-07,1492028.6644297892,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2015-08,1496810.4086912095,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2015-09,1528840.409279115,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2015-10,1452764.2821883755,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2015-11,1425984.6244495746,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2015-12,1531054.7670815687,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2016-01,1504932.6767123723,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2016-02,1483743.4652652887,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2016-03,1482058.1505992932,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2016-04,1461096.5312689336,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2016-05,1370582.9560102054,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2016-06,1440047.4059483826,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2016-07,1371758.049432132,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2016-08,1401489.5437238722,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2016-09,1479759.056872459,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2016-10,1444664.403593992,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2016-11,1457983.6146340063,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2016-12,1468873.827901596,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2017-01,1355418.685137134,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2017-02,1509265.043338794,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2017-03,1454390.9730382697,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2017-04,1442469.3532153086,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2017-05,1478610.344429494,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2017-06,1447993.8716779235,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2017-07,1438743.095957648,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2017-08,1502188.1294491217,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2017-09,1545203.0396499245,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2017-10,1537241.3078123506,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2017-11,1503627.6728419208,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2017-12,1487401.6590045264,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2018-01,1537829.9044330292,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2018-02,1539505.1493062484,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2018-03,1513245.1805288678,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2018-04,1485980.094493173,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2018-05,1458101.5305289598,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2018-06,1407527.1906076316,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2018-07,1434397.1461836018,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2018-08,1396802.322893052,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2018-09,1331236.0218303367,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2018-10,1280951.8932645477,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2018-11,1277902.2969719968,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2018-12,1304432.636957403,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2019-01,1299168.4441532253,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2019-02,1238255.4896589988,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2019-03,1226291.065800799,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2019-04,1188302.8484206633,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2019-05,1209064.837589618,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2019-06,1208308.50265892,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2019-07,1191254.0054581524,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2019-08,1183101.4182497095,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2019-09,1175544.5718454227,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2019-10,1136919.83884593,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2019-11,1129198.7474761591,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2019-12,1080849.6738609993,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2020-01,1125852.1479875946,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2020-02,1135710.098222177,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2020-03,1113925.1147309614,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2020-04,1067476.3720318486,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2020-05,1156779.085727479,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2020-06,1221699.1272146732,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2020-07,1270108.9931186405,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2020-08,1349805.2083735631,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2020-09,1424856.6892394703,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2020-10,1392096.4251399094,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2020-11,1419474.0122506884,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2020-12,1372634.4069324976,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2021-01,1374463.0990840367,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2021-02,1421001.3943544526,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2021-03,1404820.8998052306,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2021-04,1366734.5207801873,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2021-05,1415032.1523951036,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2021-06,1406508.7654018241,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2021-07,1421222.9532165914,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2021-08,1434789.809502775,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2021-09,1451928.2377162848,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2021-10,1423696.8110099665,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2021-11,1447721.1463273386,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2021-12,1466933.79033512,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2022-01,1479532.4892280938,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2022-02,1490697.2774906629,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2022-03,1455848.6792796967,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2022-04,1463936.0746210883,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2022-05,1467150.8400378719,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2022-06,1478717.5844655505,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2022-07,1468894.181975268,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2022-08,1453041.1021867918,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2022-09,1430597.6136580822,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2022-10,1439147.5483492778,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2022-11,1426968.037959117,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2022-12,1425657.902664744,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2023-01,1460576.791007139,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2023-02,1539778.420212248,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2023-03,1518383.2584787223,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2023-04,1607368.2679594564,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2023-05,1604814.3769784982,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2023-06,1701729.4798355282,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2023-07,1781184.9721676905,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2023-08,1938633.0782628725,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2023-09,1843827.8713820693,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2023-10,2110485.18477512,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2023-11,2202395.147988055,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2023-12,2082731.5774256466,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2024-01,1793030.9404296689,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2024-02,1601655.8287645525,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2024-03,1422161.9633258951,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2024-04,1332094.9463251764,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2024-05,1327357.4899821887,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2024-06,1293405.78086207,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2024-07,1302891.4582108778,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2024-08,1288786.526749742,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2024-09,1288545.99826514,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2024-10,1297252.6206637132,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2024-11,1294668.250044371,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2024-12,1271975.6539051428,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2025-01,1274876.7763355083,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2025-02,1291208.354617322,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2025-03,1256599.857469501,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2025-04,1256848.755488912,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2025-05,1262116.2656045575,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2025-06,1266237.267164119,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2025-07,1281756.583840751,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2025-08,1280776.7648303846,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2025-09,1278260.7752796072,ARS a precios constantes,False
-4,Alquiler real,3 ambientes,2025-10,1267813.1830852565,ARS a precios constantes,True
-4,Alquiler real,3 ambientes,2025-11,1297642.3942961406,ARS a precios constantes,True
-4,Alquiler real,3 ambientes,2025-12,1274360.8546397472,ARS a precios constantes,True
-4,Alquiler real,3 ambientes,2026-01,1271401.642185257,ARS a precios constantes,True
-4,Alquiler real,3 ambientes,2026-02,1288105.4444574732,ARS a precios constantes,True
-4,Alquiler real,3 ambientes,2026-03,1283817.4459613222,ARS a precios constantes,True
-4,Alquiler real,3 ambientes,2026-04,1306338.8636020767,ARS a precios constantes,True
-4,Alquiler real,3 ambientes,2026-05,1285042.7273629867,ARS a precios constantes,True
-4,Alquiler real,3 ambientes,2026-06,1284102.280634504,ARS a precios constantes,True
-4,Alquiler real,3 ambientes,2026-07,1288922.7243132996,ARS a precios constantes,True
-4,Alquiler real,3 ambientes,2026-08,1295067.8632554573,ARS a precios constantes,True
-4,Alquiler real,3 ambientes,2026-09,1259207.3285400001,ARS a precios constantes,True
+3,Oferta de alquileres,3 ambientes,2026-10,44808.399999999994,m²,True
+4,Alquiler real,1 ambiente,2012-07,745967.8231106433,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2012-08,731042.8019106833,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2012-09,745513.8422693117,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2012-10,746517.8887195404,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2012-11,728116.2302443784,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2012-12,734154.8831502437,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2013-01,708297.7180665092,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2013-02,739636.4191008552,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2013-03,704674.4902947363,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2013-04,731432.2136364836,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2013-05,736324.156677404,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2013-06,723781.5334386751,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2013-07,729645.3365145234,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2013-08,712938.1103356313,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2013-09,718461.4529409515,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2013-10,704627.5304198276,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2013-11,687983.5978928129,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2013-12,686505.1264786613,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2014-01,680214.3766951548,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2014-02,667163.3078123269,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2014-03,673420.3643262318,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2014-04,656707.9714036061,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2014-05,650003.120546433,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2014-06,667219.4883913449,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2014-07,672634.5466302661,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2014-08,660448.9565874742,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2014-09,659049.2701880154,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2014-10,647499.1375389128,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2014-11,655290.0778868446,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2014-12,656774.1214496292,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2015-01,641788.924447473,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2015-02,658911.1535930416,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2015-03,665316.3040660423,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2015-04,659347.203346629,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2015-05,669575.9336966997,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2015-06,669543.631575019,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2015-07,683220.9103460949,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2015-08,647892.5421793041,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2015-09,701547.3928188187,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2015-10,660561.6686249236,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2015-11,689715.8412789282,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2015-12,701862.715975892,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2016-01,712710.1401663824,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2016-02,690688.2095495344,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2016-03,671409.5393839933,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2016-04,642080.8188584569,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2016-05,652746.8797579455,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2016-06,632990.9126351135,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2016-07,629453.6434047212,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2016-08,655209.7313161248,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2016-09,687068.9715956857,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2016-10,661427.4052500918,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2016-11,648818.7099487911,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2016-12,654510.5264335221,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2017-01,666459.5216552755,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2017-02,675713.4570656207,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2017-03,681122.2356286811,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2017-04,681085.516771734,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2017-05,679208.1358790749,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2017-06,688209.5438134061,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2017-07,675047.4338770638,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2017-08,690831.4598245936,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2017-09,704207.1440385159,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2017-10,724388.7858478073,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2017-11,720071.7288941592,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2017-12,702442.3553086047,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2018-01,734529.8973161353,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2018-02,707329.6642357322,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2018-03,730518.4314125126,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2018-04,736662.4386974759,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2018-05,714501.8380384325,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2018-06,716278.9201207834,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2018-07,696973.2935118478,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2018-08,700776.6408356025,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2018-09,685666.2921241412,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2018-10,671786.0623487972,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2018-11,665895.0508239921,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2018-12,645508.1021282506,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2019-01,651546.2410400503,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2019-02,645188.1034852255,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2019-03,635681.7773482259,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2019-04,631413.6248859763,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2019-05,622566.0510564016,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2019-06,625366.6824446744,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2019-07,622413.197897262,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2019-08,622414.4910938103,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2019-09,603083.165197204,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2019-10,607729.940645401,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2019-11,590611.8355488396,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2019-12,585418.7805558869,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2020-01,594123.6777209074,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2020-02,600311.6374908442,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2020-03,574798.5138596973,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2020-04,563127.2081959458,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2020-05,610638.3107711929,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2020-06,626653.773993601,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2020-07,654201.2719198202,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2020-08,669621.8263312972,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2020-09,688213.3270208617,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2020-10,695517.3887189017,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2020-11,699571.4482298234,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2020-12,692700.1079619658,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2021-01,685363.3909981865,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2021-02,697673.164522043,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2021-03,698797.5132554749,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2021-04,702479.6914498328,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2021-05,703588.1288465402,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2021-06,699598.1133183206,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2021-07,705796.2000319592,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2021-08,706184.800156273,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2021-09,700295.8981126035,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2021-10,697823.8779359867,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2021-11,697735.1210358953,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2021-12,701266.1443115942,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2022-01,710665.8679716723,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2022-02,732335.5278908216,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2022-03,710640.9679907616,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2022-04,720325.5917072393,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2022-05,751411.5452217491,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2022-06,742446.3301987846,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2022-07,735846.0768037605,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2022-08,757372.644393382,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2022-09,752487.9065232282,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2022-10,750662.6627814079,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2022-11,751231.3847658661,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2022-12,750318.3535232691,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2023-01,767977.777720632,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2023-02,779410.7827139157,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2023-03,803975.8822579089,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2023-04,866283.8594767135,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2023-05,844491.5486030228,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2023-06,870841.6945535148,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2023-07,940262.0619141946,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2023-08,1019948.5185398712,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2023-09,1007369.270480788,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2023-10,1098274.3259597288,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2023-11,1037054.1443366489,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2023-12,999913.188253966,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2024-01,855122.0843657996,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2024-02,773647.2593008856,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2024-03,711434.3609831624,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2024-04,661957.8368840488,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2024-05,651896.9377194217,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2024-06,643602.1027948367,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2024-07,631360.4699301019,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2024-08,642244.6432834084,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2024-09,637815.7998663086,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2024-10,634909.6156986302,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2024-11,621496.0277583967,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2024-12,619850.7541375814,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2025-01,634825.9784213828,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2025-02,641646.771992839,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2025-03,638908.4658300036,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2025-04,640269.437996522,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2025-05,638342.7790707276,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2025-06,640357.9530216046,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2025-07,636362.985407127,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2025-08,649748.0603090243,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2025-09,637426.1438374564,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2025-10,636720.5687382957,ARS a precios constantes,False
+4,Alquiler real,1 ambiente,2025-11,637105.745177647,ARS a precios constantes,True
+4,Alquiler real,1 ambiente,2025-12,639568.1933176022,ARS a precios constantes,True
+4,Alquiler real,1 ambiente,2026-01,645295.8677551206,ARS a precios constantes,True
+4,Alquiler real,1 ambiente,2026-02,653161.5385826329,ARS a precios constantes,True
+4,Alquiler real,1 ambiente,2026-03,647252.547661756,ARS a precios constantes,True
+4,Alquiler real,1 ambiente,2026-04,632541.6217356548,ARS a precios constantes,True
+4,Alquiler real,1 ambiente,2026-05,632126.1246988423,ARS a precios constantes,True
+4,Alquiler real,1 ambiente,2026-06,636535.6773852812,ARS a precios constantes,True
+4,Alquiler real,1 ambiente,2026-07,623087.1732479831,ARS a precios constantes,True
+4,Alquiler real,1 ambiente,2026-08,620224.5633077294,ARS a precios constantes,True
+4,Alquiler real,1 ambiente,2026-09,611444.4048860203,ARS a precios constantes,True
+4,Alquiler real,1 ambiente,2026-10,610086.49236,ARS a precios constantes,True
+4,Alquiler real,2 ambientes,2012-07,1018177.1249755756,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2012-08,983684.2407384556,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2012-09,991272.3839167386,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2012-10,999743.9106710566,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2012-11,959640.8800578091,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2012-12,986602.0673669451,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2013-01,962423.0331634022,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2013-02,968482.5852825268,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2013-03,980376.8278309671,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2013-04,986430.4904926566,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2013-05,972544.9168913781,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2013-06,967659.9978189154,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2013-07,983739.9619558475,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2013-08,952934.7256280255,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2013-09,956078.2916407957,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2013-10,935605.9931480592,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2013-11,940466.726390362,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2013-12,935021.9634031948,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2014-01,889889.9255572561,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2014-02,895487.001664832,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2014-03,893398.9944488291,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2014-04,894637.4545995669,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2014-05,868423.770709929,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2014-06,908909.3230824135,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2014-07,883069.5905957372,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2014-08,875870.6259079404,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2014-09,882804.337291143,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2014-10,864719.8342464694,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2014-11,861517.5239424416,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2014-12,879673.3766362957,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2015-01,858684.2522872348,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2015-02,866918.5877158445,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2015-03,880688.1606886304,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2015-04,885811.9453744411,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2015-05,958441.1269939555,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2015-06,975248.5860972191,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2015-07,976368.9292141332,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2015-08,965399.5484557452,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2015-09,981328.192463399,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2015-10,933274.3680464738,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2015-11,997928.058708441,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2015-12,953173.3846318357,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2016-01,962290.9159239805,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2016-02,947190.8128763651,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2016-03,939516.1732140431,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2016-04,883857.8479375648,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2016-05,907003.1324277684,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2016-06,884204.1983033716,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2016-07,898739.7217477154,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2016-08,945083.0238993928,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2016-09,940962.1070959216,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2016-10,921625.6636613702,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2016-11,915102.8059300615,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2016-12,913356.4921002752,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2017-01,910361.7345303048,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2017-02,918580.3375516238,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2017-03,917950.1805994892,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2017-04,919520.3862096124,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2017-05,931970.0221983329,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2017-06,941202.4223708237,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2017-07,934599.9635787152,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2017-08,948815.7897411807,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2017-09,979825.2149196158,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2017-10,998355.1253294593,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2017-11,967667.384948688,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2017-12,956553.1180028016,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2018-01,981810.5271056083,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2018-02,973477.7880845288,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2018-03,971051.9376685668,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2018-04,978138.4162647376,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2018-05,970435.3390874882,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2018-06,969241.0485111462,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2018-07,970468.0043798275,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2018-08,949250.6446948234,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2018-09,925601.9019364952,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2018-10,883017.4002574628,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2018-11,871063.4512875046,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2018-12,853956.4481868311,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2019-01,854361.0200608536,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2019-02,864763.3040613867,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2019-03,851544.4291236034,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2019-04,826617.2702219249,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2019-05,813702.25852247,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2019-06,824920.4178705482,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2019-07,820803.7138510273,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2019-08,832245.8740941867,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2019-09,798455.3987158616,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2019-10,792927.9783557659,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2019-11,777763.1558256047,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2019-12,765373.9855954765,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2020-01,776429.4012132399,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2020-02,754293.9332840669,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2020-03,773755.0082225598,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2020-04,740898.1695046036,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2020-05,801418.5589607215,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2020-06,800581.232446118,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2020-07,874592.515923657,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2020-08,902115.2645568664,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2020-09,916876.4715794949,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2020-10,920801.2566546311,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2020-11,920467.2136481932,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2020-12,899795.648945738,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2021-01,897120.052076597,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2021-02,906605.9379153396,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2021-03,929871.366522379,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2021-04,931632.8048384297,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2021-05,936598.8715068556,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2021-06,932253.9174819543,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2021-07,948683.4770685908,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2021-08,954033.5147450881,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2021-09,944115.1787701375,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2021-10,938920.600231372,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2021-11,940860.1875350432,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2021-12,947585.6572772568,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2022-01,944834.0805501257,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2022-02,958027.2879941787,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2022-03,988673.9637332169,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2022-04,983811.9218957594,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2022-05,1029676.9195698898,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2022-06,1000791.6436024281,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2022-07,1002618.7344892303,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2022-08,1010689.1988952919,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2022-09,1003289.0341570454,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2022-10,963347.0582899235,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2022-11,989919.4731102895,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2022-12,986083.747319652,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2023-01,980126.954435285,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2023-02,988638.3031397817,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2023-03,1046688.8429976944,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2023-04,1096686.3494727162,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2023-05,1138386.1119877389,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2023-06,1215726.2622575997,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2023-07,1260757.5572391099,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2023-08,1447942.5996922026,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2023-09,1409316.4955489435,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2023-10,1524935.933284459,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2023-11,1508573.8004202018,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2023-12,1368697.7005192228,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2024-01,1171714.836441237,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2024-02,1060335.9841405265,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2024-03,962208.499724222,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2024-04,894802.8035586728,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2024-05,881634.9017399894,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2024-06,866769.5956098043,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2024-07,853565.8359232516,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2024-08,860753.1125781467,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2024-09,858655.7626287501,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2024-10,859534.5412544266,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2024-11,850112.3074655314,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2024-12,841678.0716840676,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2025-01,848027.3815359937,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2025-02,872371.4876839403,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2025-03,851676.7759387253,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2025-04,861606.8903142962,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2025-05,871033.4218501647,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2025-06,868870.497287228,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2025-07,859072.677164859,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2025-08,868236.8885667344,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2025-09,868787.2847147965,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2025-10,866827.5816494831,ARS a precios constantes,False
+4,Alquiler real,2 ambientes,2025-11,851350.0619955295,ARS a precios constantes,True
+4,Alquiler real,2 ambientes,2025-12,855247.2247765425,ARS a precios constantes,True
+4,Alquiler real,2 ambientes,2026-01,855970.4792285183,ARS a precios constantes,True
+4,Alquiler real,2 ambientes,2026-02,858587.240453749,ARS a precios constantes,True
+4,Alquiler real,2 ambientes,2026-03,871175.2690530525,ARS a precios constantes,True
+4,Alquiler real,2 ambientes,2026-04,855855.0650382099,ARS a precios constantes,True
+4,Alquiler real,2 ambientes,2026-05,852187.2596096338,ARS a precios constantes,True
+4,Alquiler real,2 ambientes,2026-06,851055.4636780395,ARS a precios constantes,True
+4,Alquiler real,2 ambientes,2026-07,840440.7268947286,ARS a precios constantes,True
+4,Alquiler real,2 ambientes,2026-08,842409.341901685,ARS a precios constantes,True
+4,Alquiler real,2 ambientes,2026-09,826323.0775250176,ARS a precios constantes,True
+4,Alquiler real,2 ambientes,2026-10,825180.4494729999,ARS a precios constantes,True
+4,Alquiler real,3 ambientes,2012-07,1616251.5495974242,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2012-08,1575717.801539473,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2012-09,1570144.7652389107,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2012-10,1558493.1884597188,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2012-11,1492654.4428466975,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2012-12,1525968.8809518432,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2013-01,1441077.3991872694,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2013-02,1475081.5513320076,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2013-03,1481361.72536023,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2013-04,1584067.9351318611,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2013-05,1497995.2933959109,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2013-06,1485409.0566069202,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2013-07,1502683.771631661,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2013-08,1443768.359416478,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2013-09,1450961.5620616511,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2013-10,1473477.056320767,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2013-11,1482698.4481673606,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2013-12,1399119.7230001981,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2014-01,1303778.1445089504,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2014-02,1358480.4848031567,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2014-03,1365549.267864023,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2014-04,1402736.3720614635,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2014-05,1308916.5036836737,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2014-06,1374424.7167283231,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2014-07,1354930.639099852,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2014-08,1323187.051484685,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2014-09,1325309.8923329464,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2014-10,1387171.6009481016,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2014-11,1355276.188811672,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2014-12,1428754.134825961,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2015-01,1416625.5515511574,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2015-02,1373321.9732648572,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2015-03,1402883.76130974,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2015-04,1390517.3967303312,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2015-05,1525621.135574799,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2015-06,1526651.1299924897,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2015-07,1520618.5501197965,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2015-08,1525491.9209867187,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2015-09,1558135.6725549442,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2015-10,1480601.7934590888,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2015-11,1453308.9905161625,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2015-12,1560392.4613360767,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2016-01,1533769.8259066925,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2016-02,1512174.5920100568,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2016-03,1510456.9837596272,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2016-04,1489093.7030437866,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2016-05,1396845.728954973,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2016-06,1467641.2395695285,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2016-07,1398043.3392275532,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2016-08,1428344.5410882286,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2016-09,1508113.8353652067,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2016-10,1472346.7069865745,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2016-11,1485921.1374672023,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2016-12,1497020.0263185007,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2017-01,1381390.8840593179,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2017-02,1538185.208275083,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2017-03,1482259.6545582952,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2017-04,1470109.59559331,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2017-05,1506943.111577408,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2017-06,1475739.973517679,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2017-07,1466311.9367120827,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2017-08,1530972.6883049328,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2017-09,1574811.8396178037,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2017-10,1566697.5470362187,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2017-11,1532439.8158735773,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2017-12,1515902.8831564889,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2018-01,1567297.422200336,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2018-02,1569004.7677031003,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2018-03,1542241.6118734418,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2018-04,1514454.0789761872,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2018-05,1486041.3128374852,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2018-06,1434497.8798741333,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2018-07,1461882.710919139,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2018-08,1423567.504886597,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2018-09,1356744.8385159029,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2018-10,1305497.1778665886,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2018-11,1302389.1459611815,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2018-12,1329427.8537853449,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2019-01,1324062.7898155458,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2019-02,1261982.6362938823,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2019-03,1249788.9530932803,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2019-04,1211072.8148505243,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2019-05,1232232.6401409889,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2019-06,1231461.81250668,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2019-07,1214080.5212321158,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2019-08,1205771.7161560648,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2019-09,1198070.0673226924,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2019-10,1158705.216705094,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2019-11,1150836.175684672,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2019-12,1101560.6490322289,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2020-01,1147425.4494811795,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2020-02,1157472.2953295417,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2020-03,1135269.8733516394,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2020-04,1087931.091288089,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2020-05,1178945.0015828419,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2020-06,1245109.0249112418,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2020-07,1294446.508739354,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2020-08,1375669.8432369458,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2020-09,1452159.4420894415,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2020-10,1418771.4338800586,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2020-11,1446673.6235702827,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2020-12,1398936.4892744403,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2021-01,1400800.2223744688,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2021-02,1448230.2729936317,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2021-03,1431739.7317941014,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2021-04,1392923.550957182,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2021-05,1442146.6498904466,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2021-06,1433459.9398554328,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2021-07,1448456.077312103,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2021-08,1462282.8983560975,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2021-09,1479749.7289087926,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2021-10,1450977.3385590524,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2021-11,1475462.0222711149,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2021-12,1495042.8142301256,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2022-01,1507882.9262874576,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2022-02,1519261.6514721448,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2022-03,1483745.2930075985,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2022-04,1491987.6570261023,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2022-05,1495264.022985809,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2022-06,1507052.4065206153,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2022-07,1497040.7704119182,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2022-08,1480883.917814117,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2022-09,1458010.3726874224,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2022-10,1466724.1391207995,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2022-11,1454311.2479530997,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2022-12,1452976.0081689826,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2023-01,1488564.003647139,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2023-02,1569283.2749588776,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2023-03,1547478.1444071492,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2023-04,1638168.2627171099,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2023-05,1635565.434706354,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2023-06,1734337.6008882206,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2023-07,1815315.5997897107,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2023-08,1975780.687704803,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2023-09,1879158.846806063,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2023-10,2150925.7819443676,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2023-11,2244596.9012293504,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2023-12,2122640.366808272,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2024-01,1827388.5575771397,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2024-02,1632346.363169676,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2024-03,1449413.080501786,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2024-04,1357620.221510307,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2024-05,1352791.9871959998,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2024-06,1318189.7037901012,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2024-07,1327857.1433513653,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2024-08,1313481.9366684773,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2024-09,1313236.7992363104,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2024-10,1322110.2557883118,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2024-11,1319476.3640958504,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2024-12,1296348.9380199749,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2025-01,1299305.6510436272,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2025-02,1315950.171005012,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2025-03,1280678.5143610311,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2025-04,1280932.1817029717,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2025-05,1286300.626549743,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2025-06,1290500.5937259349,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2025-07,1306317.2877253687,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2025-08,1305318.6936645152,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2025-09,1302754.4933418073,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2025-10,1292106.7069597086,ARS a precios constantes,False
+4,Alquiler real,3 ambientes,2025-11,1322507.4981670587,ARS a precios constantes,True
+4,Alquiler real,3 ambientes,2025-12,1298779.8433834352,ARS a precios constantes,True
+4,Alquiler real,3 ambientes,2026-01,1295763.9272289267,ARS a precios constantes,True
+4,Alquiler real,3 ambientes,2026-02,1312787.8036451163,ARS a precios constantes,True
+4,Alquiler real,3 ambientes,2026-03,1308417.6395781778,ARS a precios constantes,True
+4,Alquiler real,3 ambientes,2026-04,1331370.6070753639,ARS a precios constantes,True
+4,Alquiler real,3 ambientes,2026-05,1309666.3995201997,ARS a precios constantes,True
+4,Alquiler real,3 ambientes,2026-06,1308707.9321831951,ARS a precios constantes,True
+4,Alquiler real,3 ambientes,2026-07,1313620.7440161943,ARS a precios constantes,True
+4,Alquiler real,3 ambientes,2026-08,1319883.6345968382,ARS a precios constantes,True
+4,Alquiler real,3 ambientes,2026-09,1283335.9491498037,ARS a precios constantes,True
+4,Alquiler real,3 ambientes,2026-10,1281719.67721,ARS a precios constantes,True
 4,Alquiler nominal,1 ambiente,2010-03,1235.3343560421172,ARS,False
 4,Alquiler nominal,1 ambiente,2010-04,1252.2883638772355,ARS,False
 4,Alquiler nominal,1 ambiente,2010-05,1297.5997821520268,ARS,False
@@ -2285,7 +2300,7 @@
 4,Alquiler nominal,1 ambiente,2025-07,452648.88762000005,ARS,False
 4,Alquiler nominal,1 ambiente,2025-08,469511.0826,ARS,False
 4,Alquiler nominal,1 ambiente,2025-09,470777.64201,ARS,False
-4,Alquiler nominal,1 ambiente,2025-10,480420.43536,ARS,True
+4,Alquiler nominal,1 ambiente,2025-10,480420.43536,ARS,False
 4,Alquiler nominal,1 ambiente,2025-11,492308.98491,ARS,True
 4,Alquiler nominal,1 ambiente,2025-12,507380.48298000003,ARS,True
 4,Alquiler nominal,1 ambiente,2026-01,527579.05608,ARS,True
@@ -2297,6 +2312,7 @@
 4,Alquiler nominal,1 ambiente,2026-07,590349.08652,ARS,True
 4,Alquiler nominal,1 ambiente,2026-08,597578.88723,ARS,True
 4,Alquiler nominal,1 ambiente,2026-09,599948.3425500001,ARS,True
+4,Alquiler nominal,1 ambiente,2026-10,610086.49236,ARS,True
 4,Alquiler nominal,2 ambientes,2010-03,1724.5602807054431,ARS,False
 4,Alquiler nominal,2 ambientes,2010-04,1740.9762941434526,ARS,False
 4,Alquiler nominal,2 ambientes,2010-05,1760.3064851017932,ARS,False
@@ -2484,7 +2500,7 @@
 4,Alquiler nominal,2 ambientes,2025-07,611063.6548959999,ARS,False
 4,Alquiler nominal,2 ambientes,2025-08,627392.163834,ARS,False
 4,Alquiler nominal,2 ambientes,2025-09,641651.794895,ARS,False
-4,Alquiler nominal,2 ambientes,2025-10,654041.513035,ARS,True
+4,Alquiler nominal,2 ambientes,2025-10,654041.513035,ARS,False
 4,Alquiler nominal,2 ambientes,2025-11,657861.411542,ARS,True
 4,Alquiler nominal,2 ambientes,2025-12,678482.38,ARS,True
 4,Alquiler nominal,2 ambientes,2026-01,699821.771732,ARS,True
@@ -2496,6 +2512,7 @@
 4,Alquiler nominal,2 ambientes,2026-07,796282.5054,ARS,True
 4,Alquiler nominal,2 ambientes,2026-08,811651.2419970001,ARS,True
 4,Alquiler nominal,2 ambientes,2026-09,810786.977214,ARS,True
+4,Alquiler nominal,2 ambientes,2026-10,825180.4494729999,ARS,True
 4,Alquiler nominal,3 ambientes,2010-03,2820.006455257,ARS,False
 4,Alquiler nominal,3 ambientes,2010-04,2799.4811043665563,ARS,False
 4,Alquiler nominal,3 ambientes,2010-05,2852.037016009992,ARS,False
@@ -2683,7 +2700,7 @@
 4,Alquiler nominal,3 ambientes,2025-07,929191.48462,ARS,False
 4,Alquiler nominal,3 ambientes,2025-08,943229.58457,ARS,False
 4,Alquiler nominal,3 ambientes,2025-09,962162.74532,ARS,False
-4,Alquiler nominal,3 ambientes,2025-10,974924.47577,ARS,True
+4,Alquiler nominal,3 ambientes,2025-10,974924.47577,ARS,False
 4,Alquiler nominal,3 ambientes,2025-11,1021937.61222,ARS,True
 4,Alquiler nominal,3 ambientes,2025-12,1030344.45913,ARS,True
 4,Alquiler nominal,3 ambientes,2026-01,1059386.77712,ARS,True
@@ -2695,6 +2712,7 @@
 4,Alquiler nominal,3 ambientes,2026-07,1244600.81921,ARS,True
 4,Alquiler nominal,3 ambientes,2026-08,1271691.96497,ARS,True
 4,Alquiler nominal,3 ambientes,2026-09,1259207.3285400001,ARS,True
+4,Alquiler nominal,3 ambientes,2026-10,1281719.67721,ARS,True
 5,Precio de venta,1 ambiente,2017-03,2665.1739800767364,USD / m²,False
 5,Precio de venta,1 ambiente,2017-06,2719.082668751105,USD / m²,False
 5,Precio de venta,1 ambiente,2017-09,2882.98726182567,USD / m²,False
@@ -3082,8 +3100,9 @@
 8,Costo por m² · USD MEP,Total Ciudad,2026-05,1042.8997591416685,USD MEP / m²,False
 8,Costo por m² · USD MEP,Total Ciudad,2026-06,1051.4218869903152,USD MEP / m²,False
 8,Costo por m² · USD MEP,Total Ciudad,2026-07,1039.9908942003676,USD MEP / m²,False
-8,Costo por m² · USD MEP,Total Ciudad,2026-08,1069.4557882462686,USD MEP / m²,True
-8,Costo por m² · USD MEP,Total Ciudad,2026-09,1082.0968291098116,USD MEP / m²,True
+8,Costo por m² · USD MEP,Total Ciudad,2026-08,1069.4557882462686,USD MEP / m²,False
+8,Costo por m² · USD MEP,Total Ciudad,2026-09,1082.077803768681,USD MEP / m²,True
+8,Costo por m² · USD MEP,Total Ciudad,2026-10,1089.4806608323438,USD MEP / m²,True
 8,Por tipo de vivienda · USD MEP,Total Ciudad,2018-11,747.3694145699312,USD MEP / m²,False
 8,Por tipo de vivienda · USD MEP,Total Ciudad,2018-12,725.1714038974205,USD MEP / m²,True
 8,Por tipo de vivienda · USD MEP,Total Ciudad,2019-01,745.0232735862164,USD MEP / m²,False
@@ -3177,8 +3196,9 @@
 8,Por tipo de vivienda · USD MEP,Total Ciudad,2026-05,1042.8997591416685,USD MEP / m²,False
 8,Por tipo de vivienda · USD MEP,Total Ciudad,2026-06,1051.4218869903152,USD MEP / m²,False
 8,Por tipo de vivienda · USD MEP,Total Ciudad,2026-07,1039.9908942003676,USD MEP / m²,False
-8,Por tipo de vivienda · USD MEP,Total Ciudad,2026-08,1069.4557882462686,USD MEP / m²,True
-8,Por tipo de vivienda · USD MEP,Total Ciudad,2026-09,1082.0968291098116,USD MEP / m²,True
+8,Por tipo de vivienda · USD MEP,Total Ciudad,2026-08,1069.4557882462686,USD MEP / m²,False
+8,Por tipo de vivienda · USD MEP,Total Ciudad,2026-09,1082.077803768681,USD MEP / m²,True
+8,Por tipo de vivienda · USD MEP,Total Ciudad,2026-10,1089.4806608323438,USD MEP / m²,True
 8,Por tipo de vivienda · USD MEP,Tipo I · sencilla,2018-11,726.7445170264027,USD MEP / m²,False
 8,Por tipo de vivienda · USD MEP,Tipo I · sencilla,2018-12,705.2287763301167,USD MEP / m²,True
 8,Por tipo de vivienda · USD MEP,Tipo I · sencilla,2019-01,725.4781737761105,USD MEP / m²,False
@@ -3272,8 +3292,9 @@
 8,Por tipo de vivienda · USD MEP,Tipo I · sencilla,2026-05,1015.9994685192189,USD MEP / m²,False
 8,Por tipo de vivienda · USD MEP,Tipo I · sencilla,2026-06,1025.3861470606378,USD MEP / m²,False
 8,Por tipo de vivienda · USD MEP,Tipo I · sencilla,2026-07,1014.5958911184925,USD MEP / m²,False
-8,Por tipo de vivienda · USD MEP,Tipo I · sencilla,2026-08,1043.9486697761195,USD MEP / m²,True
-8,Por tipo de vivienda · USD MEP,Tipo I · sencilla,2026-09,1056.4526835607537,USD MEP / m²,True
+8,Por tipo de vivienda · USD MEP,Tipo I · sencilla,2026-08,1043.9486697761195,USD MEP / m²,False
+8,Por tipo de vivienda · USD MEP,Tipo I · sencilla,2026-09,1056.4312930474334,USD MEP / m²,True
+8,Por tipo de vivienda · USD MEP,Tipo I · sencilla,2026-10,1064.1239491622323,USD MEP / m²,True
 8,Por tipo de vivienda · USD MEP,Tipo II · sencilla con local,2018-11,700.0943593055314,USD MEP / m²,False
 8,Por tipo de vivienda · USD MEP,Tipo II · sencilla con local,2018-12,680.2127060413773,USD MEP / m²,True
 8,Por tipo de vivienda · USD MEP,Tipo II · sencilla con local,2019-01,699.2275369366865,USD MEP / m²,False
@@ -3367,8 +3388,9 @@
 8,Por tipo de vivienda · USD MEP,Tipo II · sencilla con local,2026-05,972.0281903776101,USD MEP / m²,False
 8,Por tipo de vivienda · USD MEP,Tipo II · sencilla con local,2026-06,979.7455042872123,USD MEP / m²,False
 8,Por tipo de vivienda · USD MEP,Tipo II · sencilla con local,2026-07,970.0668998048146,USD MEP / m²,False
-8,Por tipo de vivienda · USD MEP,Tipo II · sencilla con local,2026-08,997.2287042910449,USD MEP / m²,True
-8,Por tipo de vivienda · USD MEP,Tipo II · sencilla con local,2026-09,1009.350987654321,USD MEP / m²,True
+8,Por tipo de vivienda · USD MEP,Tipo II · sencilla con local,2026-08,997.2287042910449,USD MEP / m²,False
+8,Por tipo de vivienda · USD MEP,Tipo II · sencilla con local,2026-09,1009.3314879792072,USD MEP / m²,True
+8,Por tipo de vivienda · USD MEP,Tipo II · sencilla con local,2026-10,1016.9602732456719,USD MEP / m²,True
 8,Por tipo de vivienda · USD MEP,Tipo III · confortable,2018-11,859.7606120066565,USD MEP / m²,False
 8,Por tipo de vivienda · USD MEP,Tipo III · confortable,2018-12,833.5756016971426,USD MEP / m²,True
 8,Por tipo de vivienda · USD MEP,Tipo III · confortable,2019-01,854.7142906766709,USD MEP / m²,False
@@ -3462,8 +3484,9 @@
 8,Por tipo de vivienda · USD MEP,Tipo III · confortable,2026-05,1220.3379292155184,USD MEP / m²,False
 8,Por tipo de vivienda · USD MEP,Tipo III · confortable,2026-06,1228.2402134353217,USD MEP / m²,False
 8,Por tipo de vivienda · USD MEP,Tipo III · confortable,2026-07,1210.9231562967275,USD MEP / m²,False
-8,Por tipo de vivienda · USD MEP,Tipo III · confortable,2026-08,1243.993030783582,USD MEP / m²,True
-8,Por tipo de vivienda · USD MEP,Tipo III · confortable,2026-09,1257.4784600389864,USD MEP / m²,True
+8,Por tipo de vivienda · USD MEP,Tipo III · confortable,2026-08,1243.993030783582,USD MEP / m²,False
+8,Por tipo de vivienda · USD MEP,Tipo III · confortable,2026-09,1257.4551526965563,USD MEP / m²,True
+8,Por tipo de vivienda · USD MEP,Tipo III · confortable,2026-10,1264.6280024040927,USD MEP / m²,True
 8,Por tipo de vivienda · USD MEP,Tipo IV · suntuosa,2018-11,790.7483917438713,USD MEP / m²,False
 8,Por tipo de vivienda · USD MEP,Tipo IV · suntuosa,2018-12,766.113768632899,USD MEP / m²,True
 8,Por tipo de vivienda · USD MEP,Tipo IV · suntuosa,2019-01,785.5411861423742,USD MEP / m²,False
@@ -3557,8 +3580,9 @@
 8,Por tipo de vivienda · USD MEP,Tipo IV · suntuosa,2026-05,1093.078787547027,USD MEP / m²,False
 8,Por tipo de vivienda · USD MEP,Tipo IV · suntuosa,2026-06,1101.395298871137,USD MEP / m²,False
 8,Por tipo de vivienda · USD MEP,Tipo IV · suntuosa,2026-07,1089.791693490395,USD MEP / m²,False
-8,Por tipo de vivienda · USD MEP,Tipo IV · suntuosa,2026-08,1120.683531716418,USD MEP / m²,True
-8,Por tipo de vivienda · USD MEP,Tipo IV · suntuosa,2026-09,1133.868570500325,USD MEP / m²,True
+8,Por tipo de vivienda · USD MEP,Tipo IV · suntuosa,2026-08,1120.683531716418,USD MEP / m²,False
+8,Por tipo de vivienda · USD MEP,Tipo IV · suntuosa,2026-09,1133.8583560753736,USD MEP / m²,True
+8,Por tipo de vivienda · USD MEP,Tipo IV · suntuosa,2026-10,1140.4276517583592,USD MEP / m²,True
 8,Variación mensual · USD MEP,Total Ciudad,2018-12,-2.9701524092050735,%,True
 8,Variación mensual · USD MEP,Total Ciudad,2019-01,2.7375417152555093,%,True
 8,Variación mensual · USD MEP,Total Ciudad,2019-02,-1.262711262551497,%,False
@@ -3651,8 +3675,9 @@
 8,Variación mensual · USD MEP,Total Ciudad,2026-05,1.7656651949090385,%,False
 8,Variación mensual · USD MEP,Total Ciudad,2026-06,0.8171569485892594,%,False
 8,Variación mensual · USD MEP,Total Ciudad,2026-07,-1.087193726075908,%,False
-8,Variación mensual · USD MEP,Total Ciudad,2026-08,2.83318769522074,%,True
-8,Variación mensual · USD MEP,Total Ciudad,2026-09,1.1820068676492212,%,True
+8,Variación mensual · USD MEP,Total Ciudad,2026-08,2.83318769522074,%,False
+8,Variación mensual · USD MEP,Total Ciudad,2026-09,1.180227893582253,%,True
+8,Variación mensual · USD MEP,Total Ciudad,2026-10,0.6841335288349848,%,True
 8,Costo por m² · pesos,Total Ciudad,2015-01,8954.7,ARS / m²,False
 8,Costo por m² · pesos,Total Ciudad,2015-02,9052.68,ARS / m²,False
 8,Costo por m² · pesos,Total Ciudad,2015-03,9124.31,ARS / m²,False
@@ -3792,5 +3817,6 @@
 8,Costo por m² · pesos,Total Ciudad,2026-05,1496918.72,ARS / m²,False
 8,Costo por m² · pesos,Total Ciudad,2026-06,1549509.11,ARS / m²,False
 8,Costo por m² · pesos,Total Ciudad,2026-07,1584566.3,ARS / m²,False
-8,Costo por m² · pesos,Total Ciudad,2026-08,1637795.15,ARS / m²,True
-8,Costo por m² · pesos,Total Ciudad,2026-09,1665347.02,ARS / m²,True
+8,Costo por m² · pesos,Total Ciudad,2026-08,1637795.15,ARS / m²,False
+8,Costo por m² · pesos,Total Ciudad,2026-09,1665317.74,ARS / m²,True
+8,Costo por m² · pesos,Total Ciudad,2026-10,1689115.96,ARS / m²,True
