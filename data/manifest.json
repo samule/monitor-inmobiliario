@@ -9,8 +9,8 @@
     "path": "data/raw/icc/d20675672dedb620.xlsx",
     "sha256": "d20675672dedb6206f54baa92bd9b6aa755600a8c5f4d0bd8bb12f46df1d3800",
     "downloaded_at": "2026-11-26T15:48:49-03:00",
-    "checked_at": "2026-11-26T15:48:49-03:00",
-    "status": "actualizado"
+    "checked_at": "2026-11-26T17:18:06-03:00",
+    "status": "sin cambios"
   },
   "rent": {
     "id": "rent",
@@ -22,8 +22,8 @@
     "path": "data/raw/rent/0fdfb40257eb9bd5.xlsx",
     "sha256": "0fdfb40257eb9bd536aa7d5e66ee98ca5d332c921c24dd74b3e357503e2cf683",
     "downloaded_at": "2026-11-26T15:48:49-03:00",
-    "checked_at": "2026-11-26T15:48:49-03:00",
-    "status": "actualizado"
+    "checked_at": "2026-11-26T17:18:06-03:00",
+    "status": "sin cambios"
   },
   "area1": {
     "id": "area1",
@@ -35,8 +35,8 @@
     "path": "data/raw/area1/f0721de758665e94.xlsx",
     "sha256": "f0721de758665e94b79079b929396e2c1682f01984909205b3ce115215d82f8c",
     "downloaded_at": "2026-11-26T15:48:49-03:00",
-    "checked_at": "2026-11-26T15:48:49-03:00",
-    "status": "actualizado"
+    "checked_at": "2026-11-26T17:18:06-03:00",
+    "status": "sin cambios"
   },
   "area2": {
     "id": "area2",
@@ -48,8 +48,8 @@
     "path": "data/raw/area2/282d0e52e34903e6.xlsx",
     "sha256": "282d0e52e34903e66ec42bd1e2b377018bc25ce8863bddc4ddc0ef72ee02af85",
     "downloaded_at": "2026-11-26T15:48:49-03:00",
-    "checked_at": "2026-11-26T15:48:49-03:00",
-    "status": "actualizado"
+    "checked_at": "2026-11-26T17:18:06-03:00",
+    "status": "sin cambios"
   },
   "area3": {
     "id": "area3",
@@ -61,8 +61,8 @@
     "path": "data/raw/area3/b8f0aeff734dce11.xlsx",
     "sha256": "b8f0aeff734dce117c4a21b17c72af023615236278a0508cb06c7ca6a3ed0fa8",
     "downloaded_at": "2026-11-26T15:48:49-03:00",
-    "checked_at": "2026-11-26T15:48:49-03:00",
-    "status": "actualizado"
+    "checked_at": "2026-11-26T17:18:06-03:00",
+    "status": "sin cambios"
   },
   "days": {
     "id": "days",
@@ -74,7 +74,7 @@
     "path": "data/raw/days/1b3d5ea3f9ea97d3.xlsx",
     "sha256": "1b3d5ea3f9ea97d3f362250d00b40e043cb8044c913b91e0fb1734cc495b944b",
     "downloaded_at": "2026-10-13T16:10:41-03:00",
-    "checked_at": "2026-11-26T15:48:49-03:00",
+    "checked_at": "2026-11-26T17:18:06-03:00",
     "status": "sin cambios"
   },
   "new1": {
@@ -87,7 +87,7 @@
     "path": "data/raw/new1/34017f66b3ba8f40.xlsx",
     "sha256": "34017f66b3ba8f4093a0f8e1a3e23181a8a3cf3a01a3751c1f525b2ab2267565",
     "downloaded_at": "2026-10-13T16:10:41-03:00",
-    "checked_at": "2026-11-26T15:48:49-03:00",
+    "checked_at": "2026-11-26T17:18:06-03:00",
     "status": "sin cambios"
   },
   "used1": {
@@ -100,7 +100,7 @@
     "path": "data/raw/used1/713200da247390e8.xlsx",
     "sha256": "713200da247390e8b335cb2f9035c69e134ec4c5f581bb0108e4e08be06bfe64",
     "downloaded_at": "2026-10-13T16:10:41-03:00",
-    "checked_at": "2026-11-26T15:48:49-03:00",
+    "checked_at": "2026-11-26T17:18:06-03:00",
     "status": "sin cambios"
   },
   "new2": {
@@ -113,7 +113,7 @@
     "path": "data/raw/new2/a0267e1022fe5b75.xlsx",
     "sha256": "a0267e1022fe5b75d3e307f5d67ad0efc9dade49466e032dfdfb3e46431ac3ed",
     "downloaded_at": "2026-10-13T16:10:41-03:00",
-    "checked_at": "2026-11-26T15:48:49-03:00",
+    "checked_at": "2026-11-26T17:18:06-03:00",
     "status": "sin cambios"
   },
   "new3": {
@@ -126,7 +126,7 @@
     "path": "data/raw/new3/0eb2ee968b0aea41.xlsx",
     "sha256": "0eb2ee968b0aea414fa72301c390f961788324e37fb0aaece2308f7676c8210a",
     "downloaded_at": "2026-10-13T16:10:41-03:00",
-    "checked_at": "2026-11-26T15:48:49-03:00",
+    "checked_at": "2026-11-26T17:18:06-03:00",
     "status": "sin cambios"
   },
   "ipc": {
@@ -139,7 +139,7 @@
     "path": "data/raw/ipc/23c4790c19b399af.xlsx",
     "sha256": "23c4790c19b399af17048bb1d38e47dc742e32bf20f05d0dc28a633c73444aad",
     "downloaded_at": "2026-11-10T18:29:09-03:00",
-    "checked_at": "2026-11-26T15:48:49-03:00",
+    "checked_at": "2026-11-26T17:18:06-03:00",
     "status": "sin cambios"
   },
   "ripte": {
@@ -152,7 +152,7 @@
     "path": "data/raw/ripte/8a1a04c0f48b289d.pdf",
     "sha256": "8a1a04c0f48b289d58ae085a6dfaeb51a747afb5366035178759e439e5ceedd7",
     "downloaded_at": "2026-11-16T19:05:10-03:00",
-    "checked_at": "2026-11-26T15:48:49-03:00",
+    "checked_at": "2026-11-26T17:18:06-03:00",
     "status": "sin cambios"
   },
   "fx": {
@@ -165,8 +165,8 @@
     "path": "data/raw/fx/f2038f639e6f8f3b.json",
     "sha256": "f2038f639e6f8f3bd208d7780710bc44dabc1b14144496ecb64b00a85bc0b636",
     "downloaded_at": "2026-11-26T15:48:49-03:00",
-    "checked_at": "2026-11-26T15:48:49-03:00",
-    "status": "actualizado"
+    "checked_at": "2026-11-26T17:18:06-03:00",
+    "status": "sin cambios"
   },
   "cost_m2": {
     "id": "cost_m2",
@@ -178,7 +178,118 @@
     "path": "data/raw/cost_m2/3ac635300151851f.xlsx",
     "sha256": "3ac635300151851fd6551797d4a3785cfd1ddd2446a67d0830fa82b4f6c78a10",
     "downloaded_at": "2026-11-26T15:48:49-03:00",
-    "checked_at": "2026-11-26T15:48:49-03:00",
-    "status": "actualizado"
+    "checked_at": "2026-11-26T17:18:06-03:00",
+    "status": "sin cambios"
+  },
+  "used2": {
+    "id": "used2",
+    "filename": "MI_DVP_AX07.xlsx",
+    "page": "https://www.estadisticaciudad.gob.ar/eyc/banco-datos/precio-promedio-de-publicacion-del-metro-cuadrado-dolares-de-departamentos-en-venta-de-2-ambientes-usados-por-comuna-ciudad-de-buenos-aires-1er-trimestre-de-2015-2do-trimestre-de-2024/",
+    "url": "https://www.estadisticaciudad.gob.ar/eyc/wp-content/uploads/2026/01/MI_DVP_AX07.xlsx",
+    "provider": "IDECBA",
+    "format": "xlsx",
+    "path": "data/raw/used2/52da43e076028309.xlsx",
+    "sha256": "52da43e076028309bf7710601619772dfbae051c66793643ee329ed009fcecd9",
+    "downloaded_at": "2026-11-26T20:12:56+00:00",
+    "checked_at": "2026-11-26T17:18:06-03:00",
+    "status": "sin cambios"
+  },
+  "used3": {
+    "id": "used3",
+    "filename": "MI_DVP_AX08.xlsx",
+    "page": "https://www.estadisticaciudad.gob.ar/eyc/banco-datos/precio-promedio-de-publicacion-del-metro-cuadrado-dolares-de-departamentos-en-venta-de-3-ambientes-usados-por-comuna-ciudad-de-buenos-aires-1er-trimestre-de-2015-2do-trimestre-de-2024/",
+    "url": "https://www.estadisticaciudad.gob.ar/eyc/wp-content/uploads/2025/01/MI_DVP_AX08.xlsx",
+    "provider": "IDECBA",
+    "format": "xlsx",
+    "path": "data/raw/used3/d54459e72714810a.xlsx",
+    "sha256": "d54459e72714810a661f7438fc592e8609d3905fdd3b2522e3aca433c6fa9971",
+    "downloaded_at": "2026-11-26T20:12:56+00:00",
+    "checked_at": "2026-11-26T17:18:06-03:00",
+    "status": "sin cambios"
+  },
+  "deeds": {
+    "id": "deeds",
+    "filename": "EE_IS_MI_AN_M07.xlsx",
+    "page": "https://www.estadisticaciudad.gob.ar/eyc/banco-datos/actos-notariales-de-compraventa-de-inmuebles-e-hipotecas-anotados-en-el-colegio-de-escribanos-ciudad-de-buenos-aires-enero-de-2002-junio-de-2025/",
+    "url": "https://www.estadisticaciudad.gob.ar/eyc/wp-content/uploads/2026/09/EE_IS_MI_AN_M07.xlsx",
+    "provider": "IDECBA sobre datos del Colegio de Escribanos",
+    "format": "xlsx",
+    "path": "data/raw/deeds/22e221c955cf2853.xlsx",
+    "sha256": "22e221c955cf285315d0800fd1efa5d819e82a926b62bc52651a2523cd7adf45",
+    "downloaded_at": "2026-11-26T20:12:56+00:00",
+    "checked_at": "2026-11-26T17:18:06-03:00",
+    "status": "sin cambios"
+  },
+  "deeds_ce": {
+    "id": "deeds_ce",
+    "filename": "escrituras.json",
+    "page": "https://www.colegio-escribanos.org.ar/?s=Cantidad+de+escrituras+de+compraventa+realizadas",
+    "url": "https://www.colegio-escribanos.org.ar/wp-json/wp/v2/posts",
+    "search": "escrituras de compraventa realizadas",
+    "provider": "Colegio de Escribanos de la Ciudad de Buenos Aires",
+    "format": "wp_posts",
+    "path": "data/raw/deeds_ce/cef9f128f9a974ca.json",
+    "sha256": "cef9f128f9a974ca62004a7f7a6fadf2322236af84b5af97a8e55f28a38ccb29",
+    "downloaded_at": "2026-11-26T20:12:56+00:00",
+    "checked_at": "2026-11-26T17:18:06-03:00",
+    "status": "sin cambios"
+  },
+  "uva": {
+    "id": "uva",
+    "filename": "uva.json",
+    "page": "https://www.bcra.gob.ar/PublicacionesEstadisticas/Principales_variables.asp",
+    "url": "https://api.bcra.gob.ar/estadisticas/v4.0/monetarias/31",
+    "since": "2016-03-31",
+    "aggregate": "mean",
+    "provider": "BCRA",
+    "format": "bcra",
+    "title": "UVA · unidad de valor adquisitivo · promedio mensual",
+    "path": "data/raw/uva/4c08773b13abac85.json",
+    "sha256": "4c08773b13abac8526ca3c834d0b56a1a1d721dec6745081fb283dd6e8e413ce",
+    "downloaded_at": "2026-11-26T20:12:56+00:00",
+    "checked_at": "2026-11-26T17:18:06-03:00",
+    "status": "sin cambios"
+  },
+  "mortgage": {
+    "id": "mortgage",
+    "filename": "prestamos_hipotecarios.json",
+    "page": "https://www.bcra.gob.ar/PublicacionesEstadisticas/Principales_variables.asp",
+    "url": "https://api.bcra.gob.ar/estadisticas/v4.0/monetarias/112",
+    "since": "2002-12-31",
+    "aggregate": "last",
+    "provider": "BCRA",
+    "format": "bcra",
+    "title": "Préstamos hipotecarios al sector privado · saldo a fin de mes, millones de ARS",
+    "path": "data/raw/mortgage/6af2710baa487d55.json",
+    "sha256": "6af2710baa487d559706a1670e55d0589da5384926df1aa094fda452fbece8a7",
+    "downloaded_at": "2026-11-26T20:12:56+00:00",
+    "checked_at": "2026-11-26T17:18:06-03:00",
+    "status": "sin cambios"
+  },
+  "cbt": {
+    "id": "cbt",
+    "filename": "serie_cba_cbt.xls",
+    "page": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-4-43-149",
+    "url": "https://www.indec.gob.ar/ftp/cuadros/sociedad/serie_cba_cbt.xls",
+    "provider": "INDEC",
+    "format": "xls",
+    "path": "data/raw/cbt/c040c3e37a8574ad.xls",
+    "sha256": "c040c3e37a8574ad4e4c147aa7a1cca24931cd8c73e8274fa5538746dd537565",
+    "downloaded_at": "2026-11-26T20:12:56+00:00",
+    "checked_at": "2026-11-26T17:18:06-03:00",
+    "status": "sin cambios"
+  },
+  "ust10": {
+    "id": "ust10",
+    "filename": "GS10.csv",
+    "page": "https://fred.stlouisfed.org/series/GS10",
+    "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=GS10",
+    "provider": "Reserva Federal de St. Louis (FRED)",
+    "format": "csv",
+    "path": "data/raw/ust10/018e609eb98c52ec.csv",
+    "sha256": "018e609eb98c52ec8d2cf0ea9f8e1450c24974c31cca455cc19717a77703af78",
+    "downloaded_at": "2026-11-26T20:12:56+00:00",
+    "checked_at": "2026-11-26T17:18:06-03:00",
+    "status": "sin cambios"
   }
 }

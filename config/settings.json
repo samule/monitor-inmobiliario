@@ -5,5 +5,17 @@
   "price_history_start": "2017-01",
   "index_base": "2021-01",
   "rent_area_m2": 30,
-  "timezone": "America/Sao_Paulo"
+  "timezone": "America/Sao_Paulo",
+  "long_exchange_rate": "blue",
+  "long_exchange_label": "Dólar blue vendedor",
+  "rent_areas_m2": [
+    30,
+    43,
+    70
+  ],
+  "mortgage_rate_pct": 4.5,
+  "mortgage_years": 20,
+  "mortgage_ltv": 0.75,
+  "uva_base": "2016-04",
+  "deeds_tolerance": 0.05
 }

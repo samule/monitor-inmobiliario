@@ -16,6 +16,9 @@ CONTROL_SNAPSHOTS={
     'ripte':'data/raw/ripte/3e87f594ae7a215d.pdf',
     'new1':'data/raw/new1/34017f66b3ba8f40.xlsx',
     'cost_m2':'data/raw/cost_m2/f708835148156f0d.xlsx',
+    'deeds_ce':'data/raw/deeds_ce/cef9f128f9a974ca.json',
+    'cbt':'data/raw/cbt/c040c3e37a8574ad.xls',
+    'uva':'data/raw/uva/4c08773b13abac85.json',
 }
 spec=importlib.util.spec_from_file_location('monitor',ROOT/'scripts/update.py')
 m=importlib.util.module_from_spec(spec); spec.loader.exec_module(m)
@@ -27,6 +30,7 @@ class PipelineTests(unittest.TestCase):
         sources=json.loads((ROOT/'config/sources.json').read_text())
         manifest=json.loads((ROOT/'data/manifest.json').read_text())
         cls.ds={s['id']:m.parse_source(s,ROOT/manifest[s['id']]['path'],cls.settings,date(2026,10,13)) for s in sources}
+        cls.ds['fx_blue']=m.parse_fx(ROOT/manifest['fx']['path'],cls.settings['long_exchange_rate'],date(2026,10,13))
         by_id={s['id']:s for s in sources}
         cls.original={k:m.parse_source(by_id[k],ROOT/path,cls.settings,date(2026,10,13)) for k,path in CONTROL_SNAPSHOTS.items()}
         cls.cards=m.build_charts(cls.ds,cls.settings)
@@ -38,11 +42,18 @@ class PipelineTests(unittest.TestCase):
         self.assertAlmostEqual(self.original['ripte'][0]['2026-07']['values'][0],1946028.12,places=2)
         self.assertAlmostEqual(self.original['new1'][0]['2026-06']['values'][0],3105.25968287032,places=5)
         self.assertAlmostEqual(self.original['cost_m2'][0]['2026-08']['values'][0],1637795.31,places=2)
+        # Informe del Colegio de Escribanos de octubre de 2026: 6776 escrituras, $1.200.824 millones, 1208 con hipoteca.
+        oct26=self.original['deeds_ce'][0]['2026-10']
+        self.assertEqual((oct26['values'][0],oct26['amount'],oct26['mortgages']),(6776,1200824e6,1208))
+        # Canasta básica total por adulto equivalente de junio de 2025 (INDEC), citada en el video.
+        self.assertAlmostEqual(self.original['cbt'][0]['2025-06']['values'][1],365177.35,places=2)
+        # UVA del 31/3/2016 = 14,05 (base de la serie del BCRA).
+        self.assertAlmostEqual(self.original['uva'][0]['2016-03']['values'][0],14.05,places=2)
         # La serie actual no puede perder historia respecto de la primera publicación.
         self.assertGreaterEqual(len(self.ds['ripte'][0]),385)
 
-    def test_all_eight_and_correct_frequency(self):
-        self.assertEqual([c['id'] for c in self.cards],list(range(1,9)))
+    def test_all_twelve_and_correct_frequency(self):
+        self.assertEqual([c['id'] for c in self.cards],list(range(1,13)))
         for c in self.cards:
             for v in c['views']:
                 for line in v['lines']:
@@ -100,5 +111,64 @@ class PipelineTests(unittest.TestCase):
         self.assertIn('2025-04',changes)
         points=dict((p[0],p[1]) for p in card['views'][0]['lines'][0]['points'])
         self.assertAlmostEqual(changes['2025-04'],100*(points['2025-04']/points['2025-03']-1),places=10)
+
+    def test_deeds_prefer_colegio_and_reject_inconsistent_idecba_years(self):
+        merged,rejected=m.merge_deeds(self.ds['deeds'][0],self.ds['deeds_ce'][0],self.settings['deeds_tolerance'])
+        # IDECBA publicó para 2026 cifras de alrededor de un quinto de las del Colegio.
+        self.assertIn('2026',rejected)
+        self.assertNotIn('2025',rejected)
+        self.assertEqual(merged['2026-10']['source'],'Colegio')
+        # Meses sin informe del Colegio se completan con IDECBA (2016-04 no tiene informe publicado).
+        self.assertEqual(merged['2016-04']['source'],'IDECBA')
+        self.assertEqual(merged['2002-01']['sales'],self.ds['deeds'][0]['2002-01']['values'][0])
+        # Un mes de un año descartado sin informe del Colegio queda fuera, no se completa con IDECBA.
+        changed=copy.deepcopy(self.ds['deeds_ce'][0]); changed.pop('2026-05')
+        merged,_=m.merge_deeds(self.ds['deeds'][0],changed,self.settings['deeds_tolerance'])
+        self.assertNotIn('2026-05',merged)
+
+    def test_rolling_average_needs_twelve_consecutive_months(self):
+        points=[[f'2020-{i:02d}',float(i),False] for i in range(1,13)]+[['2021-02',1.0,False]]
+        out=m.rolling(points)
+        self.assertEqual(out,[['2020-12',6.5,False]])
+
+    def test_uva_index_and_payment(self):
+        card=self.cards[9]
+        uva=self.ds['uva'][0]; base=self.settings['uva_base']
+        first=card['views'][1]['lines'][0]['points'][0]
+        self.assertEqual(first[0],base); self.assertAlmostEqual(first[1],100,places=10)
+        k='2025-06'
+        expected=100*uva[k]['values'][0]/uva[base]['values'][0]
+        self.assertAlmostEqual(dict((p[0],p[1]) for p in card['views'][1]['lines'][0]['points'])[k],expected,places=10)
+        # Índice relativo = índice de la cuota / índice del alquiler de 2 ambientes.
+        rent=self.ds['rent'][0]
+        rel=expected/(100*rent[k]['values'][1]/rent[base]['values'][1])*100
+        self.assertAlmostEqual(dict((p[0],p[1]) for p in card['views'][0]['lines'][0]['points'])[k],rel,places=10)
+        # Cuota francesa: 100.000 a 20 años al 4,5% anual = 632,65 por mes.
+        self.assertAlmostEqual(m.french_payment(100000,4.5,20),632.65,places=2)
+        # Cuota inicial / alquiler, calculada aparte para el 2T 2025.
+        months=['2025-04','2025-05','2025-06']; fx=self.ds['fx'][0]; rent=self.ds['rent'][0]
+        principal=self.ds['used2'][0][k]['values'][0]*43*sum(fx[x]['values'][0] for x in months)/3*self.settings['mortgage_ltv']
+        ratio=100*m.french_payment(principal,4.5,20)/(sum(rent[x]['values'][1] for x in months)/3)
+        self.assertAlmostEqual(dict((p[0],p[1]) for p in card['views'][2]['lines'][0]['points'])[k],ratio,places=10)
+
+    def test_salary_and_basket_in_dollars_match_video_figures(self):
+        # El video (agosto de 2025) cita RIPTE de junio de 2025 en USD 1238 y la canasta en USD 308.
+        mep=self.cards[10]['views'][0]['lines']
+        wage=dict((p[0],p[1]) for p in mep[0]['points'])['2025-06']
+        basket=dict((p[0],p[1]) for p in mep[1]['points'])['2025-06']
+        self.assertAlmostEqual(wage,1238,delta=1238*0.02)
+        self.assertAlmostEqual(basket,308,delta=308*0.02)
+
+    def test_yield_by_rooms_uses_matching_rent_and_area(self):
+        view=self.cards[6]['views'][2]
+        self.assertEqual(view['title'],'Por tipología · usados')
+        k='2025-06'; months=['2025-04','2025-05','2025-06']; fx=self.ds['fx'][0]; rent=self.ds['rent'][0]
+        for i,area in enumerate(self.settings['rent_areas_m2']):
+            monthly=sum(rent[x]['values'][i]/fx[x]['values'][0] for x in months)/3
+            expected=100*12*monthly/(self.ds[f'used{i+1}'][0][k]['values'][0]*area)
+            self.assertAlmostEqual(dict((p[0],p[1]) for p in view['lines'][i]['points'])[k],expected,places=10)
+        # La vista anterior de monoambientes usados coincide con la nueva de 1 ambiente.
+        for a,b in zip(self.cards[6]['views'][0]['lines'][1]['points'],view['lines'][0]['points'],strict=True):
+            self.assertEqual((a[0],a[2]),(b[0],b[2])); self.assertAlmostEqual(a[1],b[1],places=10)
 
 if __name__=='__main__': unittest.main()

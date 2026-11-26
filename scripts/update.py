@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Descarga, conserva originales y genera un HTML autónomo con ocho indicadores."""
+"""Descarga, conserva originales y genera un HTML autónomo con doce indicadores."""
 import argparse
 import csv
 import hashlib
@@ -15,13 +15,14 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, date
 from html.parser import HTMLParser
 from pathlib import Path
-from statistics import mean
+from statistics import mean, median
 from urllib.request import Request, urlopen
-from urllib.parse import urljoin, urlparse
+from urllib.parse import urljoin, urlparse, urlencode
 from zoneinfo import ZoneInfo
 
 import openpyxl
 import pdfplumber
+import xlrd
 
 ROOT = Path(__file__).resolve().parents[1]
 MONTHS = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre']
@@ -97,6 +98,17 @@ def parse_xlsx(source,path):
                 if isinstance(row[0],int): year=row[0]
                 q=re.match(r'([1-4]).*trim',str(row[1] or ''))
                 if q and year: put(out,f'{year}-{int(q[1])*3:02d}',row[2:6],'*' in str(row[1]))
+        elif sid=='deeds':
+            expected=('Cantidad de actos de compraventa','Monto de escrituras de compraventa','Cantidad de actos hipotecarios','Monto escrituras hipotecarias')
+            if 'compraventa' not in title or tuple(str(x).strip() for x in rows[1][1:5])!=expected:
+                raise ValueError('Cambió la estructura de escrituras')
+            year=None
+            for row in rows[2:]:
+                if isinstance(row[0],int): year=row[0]; continue
+                m=month(row[0])
+                if m and year and any(v is not None for v in row[1:5]):
+                    put(out,f'{year}-{m:02d}',row[1:5],'*' in str(row[0]))
+                    if any(v<0 for v in row[1:5]): raise ValueError('Escrituras negativas')
         elif sid=='ipc':
             if 'empalmado' not in title: raise ValueError('Se esperaba IPCBA empalmado')
             for row in rows:
@@ -156,9 +168,89 @@ def parse_fx(path,house,as_of):
     if not out: raise ValueError('No hay cotizaciones para '+house)
     return out,'Cotización vendedora · '+house+' · promedio de días de semana publicados'
 
+def es_number(text):
+    """Número con formato argentino: punto de miles y coma decimal."""
+    return float(text.replace('.','').replace(',','.'))
+
+def parse_wp_posts(path):
+    """Informes mensuales del Colegio de Escribanos publicados como entradas de WordPress."""
+    posts=json.loads(path.read_text())
+    if not isinstance(posts,list): raise ValueError('Respuesta inesperada del Colegio de Escribanos')
+    out={}; chosen={}
+    for p in sorted(posts,key=lambda p:p['date']):
+        title=html.unescape(p['title']['rendered'])
+        match=re.search(r'Cantidad de escrituras de compraventa realizadas en\s+([A-Za-zé]+)\s+(?:de\s+)?(\d{4})',title,re.I)
+        if not match or not month(match[1]): continue
+        key=f'{match[2]}-{month(match[1]):02d}'
+        text=html.unescape(re.sub(r'<[^>]+>',' ',p['content']['rendered']))
+        text=re.sub(r'\s+',' ',re.sub(r'\[/?et_pb[^\]]*\]',' ',text))
+        count=re.search(r'(?:Actos de escrituras|Escrituras) de compraventa:?\s*([\d.]+)',text)
+        if not count: continue
+        amount=re.search(r'Monto involucrado:?\s*\$?\s*([\d.]+(?:,\d+)?)\s*millones',text)
+        # La cifra de hipotecas del informe corresponde al mes del informe (su acumulado anual lo confirma),
+        # aunque a veces el texto nombre el mes anterior.
+        mortgages=re.search(r'([\d.]+)\s+escrituras formalizadas con hipoteca',text) or re.search(r'con hipoteca(?: bancaria)? totalizaron\s+([\d.]+)',text)
+        value=es_number(count[1])
+        if not 0<=value<50000: raise ValueError('Cantidad de escrituras fuera de rango: '+key)
+        # Si un mes tiene más de un informe, vale el publicado último.
+        chosen[key]=p['date']
+        out[key]={'values':[value],'amount':es_number(amount[1])*1e6 if amount else None,
+                  'mortgages':es_number(mortgages[1]) if mortgages else None,'provisional':False,'published':p['date'][:10]}
+    if len(out)<100: raise ValueError('El Colegio de Escribanos no contiene el histórico esperado')
+    return dict(sorted(out.items())),'Escrituras de compraventa · informes mensuales del Colegio de Escribanos'
+
+def parse_bcra(path,aggregate,as_of):
+    raw=json.loads(path.read_text())
+    detail=raw.get('detalle') if isinstance(raw,dict) else None
+    if not detail: raise ValueError('Respuesta inesperada del BCRA')
+    buckets=defaultdict(list); seen=set()
+    for r in sorted(detail,key=lambda r:r['fecha']):
+        day=date.fromisoformat(r['fecha'])
+        if day>as_of: continue
+        if r['fecha'] in seen: raise ValueError('Dato duplicado del BCRA: '+r['fecha'])
+        seen.add(r['fecha'])
+        value=numeric(r.get('valor'))
+        if value is None or value<=0: raise ValueError('Dato inválido del BCRA: '+r['fecha'])
+        buckets[r['fecha'][:7]].append(value)
+    pick=mean if aggregate=='mean' else (lambda v:v[-1])
+    out={k:{'values':[pick(v)],'provisional':k==as_of.strftime('%Y-%m'),'observations':len(v)} for k,v in sorted(buckets.items())}
+    return out,raw.get('descripcion','Serie del BCRA')
+
+def parse_cbt(path):
+    book=xlrd.open_workbook(str(path))
+    sheet=book.sheet_by_index(0)
+    title=str(sheet.cell_value(0,0))
+    if 'adulto equivalente' not in title or 'Canasta básica total' not in str(sheet.row_values(3)):
+        raise ValueError('Cambió la estructura de la canasta básica')
+    out={}
+    for i in range(sheet.nrows):
+        row=sheet.row_values(i)
+        if isinstance(row[0],float) and row[0]>30000:
+            day=xlrd.xldate_as_datetime(row[0],book.datemode)
+            put(out,day.strftime('%Y-%m'),[row[1],row[3]])
+    if len(out)<100: raise ValueError('La canasta básica no contiene el histórico esperado')
+    return out,'Canasta básica alimentaria y total por adulto equivalente · INDEC (GBA)'
+
+def parse_csv_rate(path):
+    rows=list(csv.reader(path.read_text().splitlines()))
+    if rows[0][0]!='observation_date': raise ValueError('Cambió el formato de FRED')
+    out={}
+    for d,v in rows[1:]:
+        if v in ('','.'): continue
+        put(out,d[:7],[float(v)])
+    if len(out)<100: raise ValueError('La tasa de EE.UU. no contiene el histórico esperado')
+    return out,'Rendimiento del bono del Tesoro de EE.UU. a 10 años · promedio mensual'
+
 def parse_source(s,path,settings,as_of):
-    if s['format']=='xlsx': return parse_xlsx(s,path)
-    if s['format']=='pdf': return parse_ripte(path)
+    fmt=s['format']
+    if fmt=='xlsx': return parse_xlsx(s,path)
+    if fmt=='pdf': return parse_ripte(path)
+    if fmt=='wp_posts': return parse_wp_posts(path)
+    if fmt=='bcra':
+        rows,_=parse_bcra(path,s['aggregate'],as_of)
+        return rows,s.get('title',s['id'])
+    if fmt=='xls': return parse_cbt(path)
+    if fmt=='csv': return parse_csv_rate(path)
     return parse_fx(path,settings['exchange_rate'],as_of)
 
 class Links(HTMLParser):
@@ -170,15 +262,51 @@ class Links(HTMLParser):
 
 def fetch(url):
     request=Request(url,headers={'User-Agent':'MonitorInmobiliarioLocal/1.0','Accept':'*/*'})
-    with urlopen(request,timeout=20) as r:
+    with urlopen(request,timeout=40) as r:
         content=r.read(20_000_001)
         if len(content)>20_000_000: raise ValueError('Descarga demasiado grande')
         return content
 
+def fetch_json(url):
+    request=Request(url,headers={'User-Agent':'MonitorInmobiliarioLocal/1.0','Accept':'application/json'})
+    with urlopen(request,timeout=40) as r:
+        content=r.read(20_000_001)
+        if len(content)>20_000_000: raise ValueError('Descarga demasiado grande')
+        return json.loads(content),r.headers
+
+def download_wp_posts(s):
+    posts=[]; page=1
+    while True:
+        query=urlencode({'search':s['search'],'per_page':100,'page':page,'_fields':'id,date,modified,link,title,content'})
+        batch,headers=fetch_json(s['url']+'?'+query)
+        if not isinstance(batch,list): raise ValueError('Respuesta inesperada del Colegio de Escribanos')
+        posts+=[p for p in batch if 'Cantidad de escrituras de compraventa' in html.unescape(p['title']['rendered'])]
+        if page>=int(headers.get('X-WP-TotalPages','1')) or page>=20: break
+        page+=1
+    posts.sort(key=lambda p:p['id'])
+    return json.dumps(posts,ensure_ascii=False,sort_keys=True).encode()
+
+def download_bcra(s,as_of):
+    detail=[]; offset=0
+    while True:
+        query=urlencode({'desde':s['since'],'hasta':as_of.isoformat(),'limit':3000,'offset':offset})
+        data,_=fetch_json(s['url']+'?'+query)
+        results=data.get('results') or []
+        if len(results)!=1: raise ValueError('Respuesta inesperada del BCRA')
+        detail+=results[0]['detalle']
+        total=data['metadata']['resultset']['count']
+        offset+=3000
+        if offset>=total or offset>30000: break
+    detail.sort(key=lambda r:r['fecha'])
+    return json.dumps({'idVariable':results[0]['idVariable'],'detalle':detail},sort_keys=True).encode()
+
 def refresh_one(s,old,settings,as_of,now):
     try:
         url=s['url']
-        if s['format']!='json':
+        if s['format']=='wp_posts': content=download_wp_posts(s)
+        elif s['format']=='bcra': content=download_bcra(s,as_of)
+        elif s['format'] in ('json','xls','csv'): content=fetch(url)
+        else:
             links=Links(); links.feed(fetch(s['page']).decode('utf-8'))
             if s['format']=='xlsx': candidates=[u for u in links.links if re.search(r'\.xlsx(?:\?|$)',u,re.I)]
             else: candidates=[u for u in links.links if 'ripte' in u.lower() and re.search(r'\.pdf(?:\?|$)',u,re.I)]
@@ -191,7 +319,7 @@ def refresh_one(s,old,settings,as_of,now):
             url=urljoin(s['page'],link)
             if (urlparse(url).hostname or '').removeprefix('www.') != (urlparse(s['page']).hostname or '').removeprefix('www.'):
                 raise ValueError('La descarga cambió de dominio; revisar fuente')
-        content=fetch(url)
+            content=fetch(url)
         digest=hashlib.sha256(content).hexdigest()
         relative=Path('data/raw')/s['id']/(digest[:16]+Path(s['filename']).suffix)
         candidate=ROOT/'data'/'incoming'/(s['id']+Path(s['filename']).suffix)
@@ -220,6 +348,49 @@ def chart(title,unit,lines,frequency,averages=False):
 def quarter_months(key):
     y,m=map(int,key.split('-'))
     return [f'{y}-{n:02d}' for n in range(m-2,m+1)]
+
+def fmt_pct(value):
+    return f'{value:g}'.replace('.',',')+'%'
+
+def shift_month(key,n):
+    y,m=map(int,key.split('-')); total=y*12+m-1+n
+    return f'{total//12}-{total%12+1:02d}'
+
+def usable_fx(fx,key):
+    return key in fx and fx[key].get('observations',0)>=10
+
+def rolling(points,window=12):
+    """Promedio móvil de `window` meses consecutivos; no se calcula si falta un mes."""
+    by={k:(v,p) for k,v,p in points}; out=[]
+    for k in by:
+        months=[shift_month(k,-i) for i in range(window)]
+        if all(m in by for m in months):
+            out.append([k,mean(by[m][0] for m in months),any(by[m][1] for m in months)])
+    return out
+
+def merge_deeds(idecba,colegio,tolerance):
+    """Escrituras por mes. El Colegio de Escribanos es la fuente primaria; IDECBA, que publica los
+    mismos datos, completa los meses sin informe. Se descartan los años de IDECBA cuya cantidad
+    difiere del Colegio más que `tolerance` (mediana de los meses comunes)."""
+    ratios=defaultdict(list)
+    for k,r in colegio.items():
+        if k in idecba and r['values'][0]>0: ratios[k[:4]].append(idecba[k]['values'][0]/r['values'][0])
+    rejected=sorted(y for y,v in ratios.items() if abs(median(v)-1)>tolerance)
+    merged={}
+    for k in sorted(set(idecba)|set(colegio)):
+        ide=idecba.get(k) if k[:4] not in rejected else None
+        ce=colegio.get(k)
+        if ce:
+            merged[k]={'sales':ce['values'][0],'amount':ce['amount'] if ce['amount'] is not None else (ide['values'][1] if ide else None),
+                       'mortgages':ce['mortgages'] if ce['mortgages'] is not None else (ide['values'][2] if ide else None),
+                       'source':'Colegio','provisional':ce['provisional']}
+        elif ide:
+            merged[k]={'sales':ide['values'][0],'amount':ide['values'][1],'mortgages':ide['values'][2],'source':'IDECBA','provisional':ide['provisional']}
+    return merged,rejected
+
+def french_payment(principal,annual_rate_pct,years):
+    r=annual_rate_pct/100/12; n=years*12
+    return principal*r/(1-(1+r)**-n) if r else principal/n
 
 def build_charts(ds,settings):
     data={s:rows for s,(rows,_) in ds.items()}
@@ -276,6 +447,92 @@ def build_charts(ds,settings):
             previous=costs[prev]['values'][0]/fx[prev]['values'][0]
             changes.append([k,100*(value/previous-1),provisional or costs[prev]['provisional'] or fx[prev]['provisional']])
     c.append({'id':8,'title':'Costo de construcción por m² en USD MEP','intro':'Costo mensual · Total Ciudad y cuatro modelos de vivienda · CABA','sources':['cost_m2','fx'],'note':'Costo de construcción en pesos / dólar MEP vendedor promedio del mismo mes. Se usa el Total Ciudad oficial, no el promedio simple de los cuatro modelos. Incluye materiales, mano de obra y gastos generales; excluye terreno, IVA, derechos y permisos, costos financieros y beneficio de la constructora. Son edificios de vivienda colectiva, no un presupuesto para una casa particular ni el precio de venta. Sólo meses cerrados con al menos diez cotizaciones; no se interpolan faltantes. La historia en USD empieza con la cobertura MEP disponible. * indica datos provisorios.','views':[chart('Costo por m² · USD MEP','USD MEP / m²',usd[:1],'Mensual'),chart('Por tipo de vivienda · USD MEP','USD MEP / m²',usd,'Mensual'),chart('Variación mensual · USD MEP','%',[line('Total Ciudad',changes)],'Mensual'),chart('Costo por m² · pesos','ARS / m²',[line('Total Ciudad',[point(costs,k) for k in costs])],'Mensual')]})
+    fxb=data['fx_blue']; blue_label=settings['long_exchange_label']
+    areas=settings['rent_areas_m2']; rooms=['1 ambiente','2 ambientes','3 ambientes']
+    # 7 · Rentabilidad por tipología, con referencias de tasa.
+    ust=data['ust10']; rate=settings['mortgage_rate_pct']
+    for kind,prefix in [('usados','used'),('a estrenar','new')]:
+        lines=[]
+        for i in range(3):
+            pts=[]
+            for k,r in data[f'{prefix}{i+1}'].items():
+                months=quarter_months(k)
+                if all(m in rent and usable_fx(fx,m) for m in months):
+                    monthly=mean(rent[m]['values'][i]/fx[m]['values'][0] for m in months)
+                    pts.append([k,100*12*monthly/(r['values'][0]*areas[i]),r['provisional'] or any(rent[m]['provisional'] for m in months)])
+            lines.append(line(rooms[i],pts))
+        span=sorted({p[0] for ln in lines for p in ln['points']})
+        lines.append(line('Bono EE.UU. 10 años',[[k,mean(ust[m]['values'][0] for m in quarter_months(k)),False] for k in span if all(m in ust for m in quarter_months(k))]))
+        lines.append(line(f'Tasa UVA supuesta ({fmt_pct(rate)})',[[k,rate,False] for k in span]))
+        c[6]['views'].append(chart(f'Por tipología · {kind}','% anual',lines,'Trimestral'))
+    c[6]['intro']='Estimación bruta · 1, 2 y 3 ambientes · dólar MEP'
+    c[6]['sources']+=['new2','new3','used2','used3','ust10']
+    c[6]['note']+=(f' Las vistas por tipología usan el alquiler de 1, 2 y 3 ambientes sobre unidades base de {areas[0]}, {areas[1]} y {areas[2]} m² y el precio publicado del mismo tipo. '
+                   f'Referencias: rendimiento nominal en USD del bono del Tesoro de EE.UU. a 10 años (FRED) y la tasa real del crédito UVA supuesta en el gráfico 10 ({fmt_pct(rate)}); no son comparables uno a uno.')
+    # 8 · Costo de construcción con dólar blue: historia desde 2015.
+    c[7]['views'].append(chart('Costo por m² · USD blue','USD blue / m²',[line('Total Ciudad',[[k,costs[k]['values'][0]/fxb[k]['values'][0],costs[k]['provisional'] or fxb[k]['provisional']] for k in costs if usable_fx(fxb,k)])],'Mensual'))
+    c[7]['note']+=f' La vista en dólar blue ({blue_label.lower()}, mercado informal) permite ver la historia desde 2015, antes de la cobertura MEP.'
+    # 9 · Escrituras de compraventa.
+    deeds,rejected=merge_deeds(data['deeds'],data['deeds_ce'],settings['deeds_tolerance'])
+    sales=[[k,r['sales'],r['provisional']] for k,r in deeds.items()]
+    def avg_deed(rate_series):
+        return [[k,r['amount']/r['sales']/rate_series[k]['values'][0],r['provisional'] or rate_series[k]['provisional']] for k,r in deeds.items() if r['amount'] and r['sales']>=100 and usable_fx(rate_series,k)]
+    rejected_text=(' Se descartaron los datos de IDECBA de '+', '.join(rejected)+' porque difieren del Colegio en más de '+fmt_pct(100*settings['deeds_tolerance'])+'.') if rejected else ''
+    c.append({'id':9,'title':'Escrituras de compraventa','intro':'Actos por mes · todos los inmuebles · CABA','sources':['deeds_ce','deeds','fx'],
+              'note':'Cantidad de escrituras de compraventa de inmuebles ubicados en la Ciudad, de todo tipo (no sólo departamentos). Fuente primaria: informes mensuales del Colegio de Escribanos; los meses sin informe se completan con la serie de IDECBA, elaborada con los mismos datos.'+rejected_text+
+                      ' La escritura se firma en general uno o dos meses después de la reserva. Monto promedio = monto declarado / cantidad de escrituras / dólar promedio del mes: no es precio por m² ni precio de cierre de departamentos. Se omiten meses con menos de 100 escrituras (abril de 2020).',
+              'views':[chart('Compraventas por mes','Escrituras',[line('Compraventas',sales),line('Promedio móvil 12 meses',rolling(sales))],'Mensual'),
+                       chart('Monto promedio · USD MEP','USD por escritura',[line('Monto promedio',avg_deed(fx))],'Mensual'),
+                       chart('Monto promedio · USD blue','USD por escritura',[line('Monto promedio',avg_deed(fxb))],'Mensual')]})
+    # 10 · Cuota de un crédito UVA frente al alquiler y al salario.
+    uva=data['uva']; ub=settings['uva_base']; ltv=settings['mortgage_ltv']; yrs=settings['mortgage_years']
+    if not (ub in uva and ub in rent and ub in wage): raise ValueError('Falta el mes base de UVA')
+    idx=lambda series,col=0:[[k,100*series[k]['values'][col]/series[ub]['values'][col],series[k]['provisional']] for k in series if k>=ub and k in uva]
+    def relative(a,b):
+        other={k:(v,p) for k,v,p in b}
+        return [[k,100*v/other[k][0],p or other[k][1]] for k,v,p in a if k in other]
+    payment_rent=[]; payment_wage=[]
+    for name,sid in [('2 ambientes usado','used2'),('2 ambientes a estrenar','new2')]:
+        pr=[]; pw=[]
+        for k,r in data[sid].items():
+            months=quarter_months(k)
+            if not all(usable_fx(fx,m) and m in rent and m in wage for m in months): continue
+            principal=r['values'][0]*areas[1]*mean(fx[m]['values'][0] for m in months)*ltv
+            payment=french_payment(principal,rate,yrs)
+            provisional=r['provisional'] or any(rent[m]['provisional'] for m in months)
+            pr.append([k,100*payment/mean(rent[m]['values'][1] for m in months),provisional])
+            pw.append([k,100*payment/mean(wage[m]['values'][0] for m in months),provisional])
+        payment_rent.append(line(name,pr)); payment_wage.append(line(name,pw))
+    c.append({'id':10,'title':'Cuota UVA frente al alquiler','intro':f'2 ambientes · crédito de {fmt_pct(100*ltv)} del valor a {yrs} años · UVA + {fmt_pct(rate)}','sources':['uva','rent','ripte','used2','new2','fx'],
+              'note':f'Base 100 = {ub}, primer mes completo de la UVA. La cuota de un crédito UVA por sistema francés es fija en UVA, así que en pesos sigue al valor de la UVA (BCRA). El alquiler es el publicado para 2 ambientes (unidad base de {areas[1]} m², IDECBA) y el salario es RIPTE. '
+                      'Índice relativo = índice de la cuota / índice del alquiler (o del salario) × 100: 100 significa que se movieron igual desde la base; más de 100, que la cuota subió más. '
+                      f'Las otras vistas calculan la cuota inicial de un crédito nuevo en cada trimestre: precio publicado del m² × {areas[1]} m² × dólar MEP × {fmt_pct(100*ltv)}, a {yrs} años y tasa real de {fmt_pct(rate)} constante (supuesto; las tasas reales cambiaron y hubo años casi sin crédito). Excluye seguros, gastos e impuestos.',
+              'views':[chart(f'Cuota frente a alquiler y salario · {ub} = 100','Índice relativo',[line('Cuota UVA / alquiler 2 ambientes',relative(idx(uva),idx(rent,1))),line('Cuota UVA / salario RIPTE',relative(idx(uva),idx(wage)))],'Mensual'),
+                       chart(f'Cuota, alquiler y salario · base {ub} = 100','Índice',[line('Cuota de un crédito UVA',idx(uva)),line('Alquiler 2 ambientes',idx(rent,1)),line('Salario RIPTE',idx(wage))],'Mensual'),
+                       chart('Cuota inicial como % del alquiler','%',payment_rent,'Trimestral'),
+                       chart('Cuota inicial como % del salario RIPTE','%',payment_wage,'Trimestral')]})
+    # 11 · Salario y canasta básica en dólares.
+    cbt=data['cbt']
+    def in_usd(series,rates,col):
+        return [[k,series[k]['values'][col]/rates[k]['values'][0],series[k]['provisional'] or rates[k]['provisional']] for k in series if usable_fx(rates,k)]
+    c.append({'id':11,'title':'Salario y canasta básica en dólares','intro':'RIPTE y canasta básica total por adulto equivalente · promedio mensual del dólar','sources':['ripte','cbt','fx'],
+              'note':'Indicador de si la Argentina está "cara" o "barata" en dólares. RIPTE: remuneración imponible promedio de trabajadores estables (nacional). Canasta básica total: línea de pobreza por adulto equivalente del INDEC (GBA), no una canasta de la Ciudad. Cada valor mensual en pesos se divide por el promedio del dólar del mismo mes. '
+                      f'La vista en dólar blue ({blue_label.lower()}, mercado informal) cubre el salario desde 2011 y la canasta desde abril de 2016 (primer dato publicado), antes de la cobertura MEP. Canastas por salario = RIPTE / canasta básica total, sin tipo de cambio.',
+              'views':[chart('En dólar MEP','USD por mes',[line('Salario RIPTE',in_usd(wage,fx,0)),line('Canasta básica total',in_usd(cbt,fx,1))],'Mensual'),
+                       chart('En dólar blue','USD por mes',[line('Salario RIPTE',in_usd(wage,fxb,0)),line('Canasta básica total',in_usd(cbt,fxb,1))],'Mensual'),
+                       chart('Canastas por salario','Canastas',[line('RIPTE / canasta básica total',[[k,wage[k]['values'][0]/cbt[k]['values'][1],wage[k]['provisional'] or cbt[k]['provisional']] for k in cbt if k in wage])],'Mensual')]})
+    # 12 · Crédito hipotecario.
+    mortgage=data['mortgage']
+    with_mortgage=[[k,r['mortgages'],r['provisional']] for k,r in deeds.items() if r['mortgages'] is not None]
+    share=[[k,100*r['mortgages']/r['sales'],r['provisional']] for k,r in deeds.items() if r['mortgages'] is not None and r['sales']>=100]
+    real_base=max(k for k in mortgage if k in ipc)
+    c.append({'id':12,'title':'Crédito hipotecario','intro':'Escrituras con hipoteca en CABA y saldo de préstamos hipotecarios en el país','sources':['deeds_ce','deeds','mortgage','ipc','fx'],
+              'note':'Escrituras con hipoteca: informes del Colegio de Escribanos (escrituras de compraventa formalizadas con hipoteca); los meses sin ese dato se completan con los actos hipotecarios de IDECBA, que pueden diferir algunos puntos. '
+                      f'Saldo: préstamos hipotecarios al sector privado de todo el país (BCRA), último dato de cada mes, en dólar MEP promedio del mes o deflactado por IPCBA a pesos de {real_base}. El saldo cae cuando se amortiza más de lo que se presta. No incluye mora.',
+              'views':[chart('Escrituras con hipoteca','Escrituras',[line('Con hipoteca',with_mortgage),line('Promedio móvil 12 meses',rolling(with_mortgage))],'Mensual'),
+                       chart('% de compraventas con hipoteca','%',[line('Con hipoteca',share)],'Mensual'),
+                       chart('Saldo de préstamos hipotecarios · USD MEP','USD millones',[line('Saldo',[[k,mortgage[k]['values'][0]/fx[k]['values'][0],mortgage[k]['provisional'] or fx[k]['provisional']] for k in mortgage if usable_fx(fx,k)])],'Mensual'),
+                       chart(f'Saldo real · ARS de {real_base}','ARS millones a precios constantes',[line('Saldo',[[k,mortgage[k]['values'][0]*ipc[real_base]['values'][0]/ipc[k]['values'][0],mortgage[k]['provisional']] for k in mortgage if k in ipc and k<=real_base])],'Mensual')]})
     for card in c:
         if any(not ln['points'] for view in card['views'] for ln in view['lines']):
             raise ValueError('Sin datos para el gráfico '+str(card['id']))
@@ -318,6 +575,9 @@ def main():
         if not rows: raise ValueError('No hay historia cerrada: '+s['id'])
         ds[s['id']]=(rows,title)
         meta.update({'title':title,'first_period':min(rows),'last_period':max(rows),'observations':len(rows)})
+    fx_path=ROOT/manifest['fx']['path']
+    blue,_=parse_fx(fx_path,settings['long_exchange_rate'],as_of)
+    ds['fx_blue']=({k:v for k,v in blue.items() if k<as_of.strftime('%Y-%m')},'Cotización vendedora · '+settings['long_exchange_rate'])
     cards=build_charts(ds,settings)
     failures=[sid for sid,m in manifest.items() if m.get('status')=='no se pudo actualizar']
     report={'generated_at':now_text,'as_of':as_of.isoformat(),'refresh_requested':args.refresh,'settings':settings,'sources':manifest,'cards':cards,'refresh_failures':failures}

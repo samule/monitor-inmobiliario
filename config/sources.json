@@ -110,5 +110,76 @@
     "url": "https://www.estadisticaciudad.gob.ar/eyc/wp-content/uploads/2026/07/EE_CMC.xlsx",
     "provider": "IDECBA",
     "format": "xlsx"
+  },
+  {
+    "id": "used2",
+    "filename": "MI_DVP_AX07.xlsx",
+    "page": "https://www.estadisticaciudad.gob.ar/eyc/banco-datos/precio-promedio-de-publicacion-del-metro-cuadrado-dolares-de-departamentos-en-venta-de-2-ambientes-usados-por-comuna-ciudad-de-buenos-aires-1er-trimestre-de-2015-2do-trimestre-de-2024/",
+    "url": "https://www.estadisticaciudad.gob.ar/eyc/wp-content/uploads/2026/01/MI_DVP_AX07.xlsx",
+    "provider": "IDECBA",
+    "format": "xlsx"
+  },
+  {
+    "id": "used3",
+    "filename": "MI_DVP_AX08.xlsx",
+    "page": "https://www.estadisticaciudad.gob.ar/eyc/banco-datos/precio-promedio-de-publicacion-del-metro-cuadrado-dolares-de-departamentos-en-venta-de-3-ambientes-usados-por-comuna-ciudad-de-buenos-aires-1er-trimestre-de-2015-2do-trimestre-de-2024/",
+    "url": "https://www.estadisticaciudad.gob.ar/eyc/wp-content/uploads/2025/01/MI_DVP_AX08.xlsx",
+    "provider": "IDECBA",
+    "format": "xlsx"
+  },
+  {
+    "id": "deeds",
+    "filename": "EE_IS_MI_AN_M07.xlsx",
+    "page": "https://www.estadisticaciudad.gob.ar/eyc/banco-datos/actos-notariales-de-compraventa-de-inmuebles-e-hipotecas-anotados-en-el-colegio-de-escribanos-ciudad-de-buenos-aires-enero-de-2002-junio-de-2025/",
+    "url": "https://www.estadisticaciudad.gob.ar/eyc/wp-content/uploads/2026/09/EE_IS_MI_AN_M07.xlsx",
+    "provider": "IDECBA sobre datos del Colegio de Escribanos",
+    "format": "xlsx"
+  },
+  {
+    "id": "deeds_ce",
+    "filename": "escrituras.json",
+    "page": "https://www.colegio-escribanos.org.ar/?s=Cantidad+de+escrituras+de+compraventa+realizadas",
+    "url": "https://www.colegio-escribanos.org.ar/wp-json/wp/v2/posts",
+    "search": "escrituras de compraventa realizadas",
+    "provider": "Colegio de Escribanos de la Ciudad de Buenos Aires",
+    "format": "wp_posts"
+  },
+  {
+    "id": "uva",
+    "filename": "uva.json",
+    "page": "https://www.bcra.gob.ar/PublicacionesEstadisticas/Principales_variables.asp",
+    "url": "https://api.bcra.gob.ar/estadisticas/v4.0/monetarias/31",
+    "since": "2016-03-31",
+    "aggregate": "mean",
+    "provider": "BCRA",
+    "format": "bcra",
+    "title": "UVA · unidad de valor adquisitivo · promedio mensual"
+  },
+  {
+    "id": "mortgage",
+    "filename": "prestamos_hipotecarios.json",
+    "page": "https://www.bcra.gob.ar/PublicacionesEstadisticas/Principales_variables.asp",
+    "url": "https://api.bcra.gob.ar/estadisticas/v4.0/monetarias/112",
+    "since": "2002-12-31",
+    "aggregate": "last",
+    "provider": "BCRA",
+    "format": "bcra",
+    "title": "Préstamos hipotecarios al sector privado · saldo a fin de mes, millones de ARS"
+  },
+  {
+    "id": "cbt",
+    "filename": "serie_cba_cbt.xls",
+    "page": "https://www.indec.gob.ar/indec/web/Nivel4-Tema-4-43-149",
+    "url": "https://www.indec.gob.ar/ftp/cuadros/sociedad/serie_cba_cbt.xls",
+    "provider": "INDEC",
+    "format": "xls"
+  },
+  {
+    "id": "ust10",
+    "filename": "GS10.csv",
+    "page": "https://fred.stlouisfed.org/series/GS10",
+    "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=GS10",
+    "provider": "Reserva Federal de St. Louis (FRED)",
+    "format": "csv"
   }
 ]
