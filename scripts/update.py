@@ -342,7 +342,7 @@ def point(series,key,col=0,factor=1):
 
 def line(name,points,**extra): return {'name':name,'points':points,**extra}
 
-def chart(title,unit,lines,frequency,averages=False):
+def chart(title,unit,lines,frequency,averages=True):
     return {'title':title,'unit':unit,'lines':lines,'frequency':frequency,'averages':averages}
 
 def quarter_months(key):
